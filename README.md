@@ -19,136 +19,107 @@
 ![Teknofest](https://img.shields.io/badge/Mission-TEKNOFEST_2026-red?style=for-the-badge&logo=target)
 ![Category](https://img.shields.io/badge/Category-MULTI--DOMAIN-orange?style=for-the-badge&logo=aircanada)
 
-**"Sınırları Zorlayan Hız, Akılla Birleşen Güvenlik: Hyperloop 2026."**
+**"Sınırları Zorlayan Hız, Akılla Birleşen Güvenlik ve Geleceği Tasarlayan Milli Mühendislik Hamlesi."**
 
 </div>
 
 ---
 
-## 🗺️ Görev Özeti (Mission Brief)
+## 🗺️ Görev Özeti (Mission Brief: Detailed Vision)
 
-**Hyperloop Geliştirme Projesi**, sadece bir ulaşım teknolojisi prototipi değil, geleceğin "5. Taşıma Modu" için geliştirilen kapsamlı bir mühendislik çözümüdür. Bu repository (depo), **Teknofest 2026 Hyperloop Geliştirme Yarışması** kapsamında tasarlanan *HyperSystem* kapsülünün kontrol yazılımını, fiziksel simülasyon ortamını ve akıllı güvenlik katmanlarını içermektedir. 
+**Hyperloop Geliştirme Projesi**, sadece bir ulaşım aracı prototipi değil, ulaşımın 5. boyutu olarak adlandırılan vakumlu tüp taşımacılığının Türkiye'deki öncü mühendislik temellerini oluşturmayı hedefler. Bu repository, **Teknofest 2026 Hyperloop Geliştirme Yarışması** gereksinimlerine göre sıfırdan kurgulanan *HyperSystem* podunun dijital omurgasını temsil eder. Yazılım mimarimiz, tünel içerisindeki aşırı düşük sürtünme ortamında podun dinamiğini yönetmek, manyetik askılama kararlılığını sağlamak ve milisaniyelik gecikmelerin dahi kritik olduğu yüksek hızlı otonom sürüş senaryolarını simüle etmek üzere dizayn edilmiştir.
 
-2026 yılındaki 5. Yarışma, takımlardan sadece hız yapmalarını değil; enerji verimliliği, otonom güvenlik ve ileri seviye elektromanyetik askılama konularında da yetkinlik beklemektedir. Yazılım mimarimiz, bu çok disiplinli gereksinimleri tek bir çatı altında birleştirerek, tünel içerisindeki kritik verileri mikrosaniye hassasiyetinde işler.
-
----
-
-## 🏎️ Yarışma Kategorileri (Competition Domains)
-
-Podumuz, 2026 şartnamesinde tanımlanan üç kritik alanda da en yüksek standartları karşılamaktadır:
-
-### 1. Performans Kategorisi (Efficiency & Speed)
-208 metrelik vakum-benzeri test tünelinde, itki ve levitasyon sistemlerinin harmonik çalışmasıyla elde edilir.
-- **Hedef:** 186 metrelik aktif parkurda maksimum ivme ve kontrollü duruş.
-- **Odak:** Enerji tüketimi minimizasyonu ve hava aralığı kararlılığı.
-
-### 2. Teknoloji Gösterim Kategorisi (Core Tech)
-İleri seviye donanım yetkinliklerini kanıtlamak üzere tasarlanmıştır.
-- **Levitasyon:** Çelik raylar üzerinde, temassız ve minimum sürtünmeli askılama (TRL 5+).
-- **İtki (LIM):** Lineer İndüksiyon Motoru ile temassız kuvvet iletimi ve rejeneratif frenleme analizi.
-
-### 3. Tanımlı Problem Çözümü: AKGYS (Autonomous Safety)
-2026'nın özel teması olan **Akıllı Kapsül Güvenlik Yönetim Sistemi**.
-- **Senaryo:** Kapsül içi dekompresyon, yangın veya donanım arızası durumunda insan müdahalesi olmadan karar verme.
-- **Metodoloji:** FMEA ve FTA tabanlı risk önceliklendirme (RPN).
+2026 yılının 5. edisyonu, yarışmayı sadece bir hız parkuru olmaktan çıkarıp; derinlemesine uzmanlık gerektiren **TRL (Teknoloji Hazırlık Seviyesi)** odaklı bir platforma dönüştürmüştür. Podumuzun kontrol yazılımı, 208 metrelik tünel içerisindeki her bir atomik hareketi, sensör füzyonu (sensor fusion) algoritmaları ve gerçek zamanlı (real-time) veri işleme kapasitesiyle takip ederek; hem performans hem de güvenlik alanında küresel standartları (IEC 61508, EN 50126) referans alan bir güvenilirlik sunar. Bu proje, "Milli Teknoloji Hamlesi" vizyonuyla, akademik birikimi endüstriyel bir prototipe dönüştürmenin en somut adımıdır.
 
 ---
 
-## ⚡ 2026 Teknik Şartname El Kitabı (Deep-Dive Specs)
+## 🏎️ Yarışma Kategorileri (In-Depth Domain Breakdown)
 
-### 📏 Tünel ve Parkur Geometrisi
-- **Dış Çap:** 1168 mm | **İç Çap:** 1148 mm.
-- **Parkur Yapısı:** 
-  - **0-5m:** Kapsül Yerleştirme Alanı (Staging).
-  - **5-191m:** Aktif Yarış Alanı (186 Metre).
-  - **191-208m:** Güvenlik ve Bariyer Bölgesi.
-- **Ray:** Alüminyum 6101-T6 (Alt) ve 6061-T6 (Kılavuz). Ray sertlik değeri, fren balatalarından yüksek olmalıdır.
+Podumuz, 2026 Şartnamesi'nde (Bölüm 2, 3 ve 4) tanımlanan üç kritik geliştirme alanında tam kapsamlı bir mühendislik yanıtı sunmaktadır:
 
-### 🛠️ Mekanik ve Yapısal İsterler
-- **Kütle (MASS):** Tam olarak **250 kg** limiti. Her gram, ivmelenme eğrisini doğrudan etkiler.
-- **Kurtarma (Recovery):** Arka plakada M8x1,25 vida delikleri. Diş derinliği min. 10mm. Bu plaka, podun toplam ağırlığının 2 katı çekme kuvvetine dayanıklıdır.
-- **Isıl Yönetim:** Ray üzerindeki sıcaklık artışı (ΔT), 30°C'yi kesinlikle geçmemelidir.
+### 1. Performans Kategorisi (Precision & Efficiency)
+Performans, sadece nihai hız değil, itki ve levitasyon sistemlerinin tükettiği her bir watt enerjinin en verimli şekilde kinetik enerjiye dönüştürülmesidir. 186 metrelik aktif yarış parkurunda, podun ivmelenme profilini optimize eden algoritmalarımız, tünel sonundaki darbe sönümleyici bariyerlere (Section 2.c) yaklaşmadan önce güvenli duruş mesafesini korurken, aynı zamanda pürüzsüz bir seyahat kalitesi için manyetik hava aralığı sapmalarını minimize eder.
 
-### 🛑 Frenleme ve Fail-Safe Mantığı
-- **Dual Redundancy:** Ön ve arka frenler birbirinden izole çalışır.
-- **Fail-Safe Mode:** Güç kaybında veya yazılım çökmesinde yay baskılı mekanizmalar otonom olarak kapanır.
-- **Build-up Time:** Frenlerin tam kuvvete ulaşma süresi < 0.5s.
+### 2. Teknoloji Gösterim Kategorisi (Strategic Core Tech)
+Bu kategori, Hyperloop teknolojisinin "çekirdek" bileşenlerinde derinleşmeyi hedefler. Mühendislik kaynaklarımızı özellikle **Manyetik Levitasyon** ve **Lineer İndüksiyon Motoru (LIM)** alanlarında yoğunlaştırarak, fiziksel tekerlek temasını tamamen ortadan kaldıran, aşınmasız ve yüksek hızlı ulaşım modelleri geliştirdik. Çelik raylar üzerinde (Bölüm 3.3.b) gerçekleştirilen levitasyon gösterimlerimiz, enerji verimliliği açısından alüminyum sistemlere göre daha üstün bir profil çizerken, otonom kontrol döngülerimiz sınıra yakın durumlarda (edge cases) dahi sistem kararlılığını korur.
 
-### 📡 Haberleşme ve Veri Paketi
-- **AEM:** 12-36V DC besleme, DB9 konnektör, 5 adet RJ45 portu.
-- **Paket Yapısı (1Hz):** 
-  - `POS_X`, `POS_Y`, `POS_Z` (Metre cinsinden).
-  - `VEL_X`, `ACC_X` (Hız ve İvme).
-  - `BMS_TEMP1`, `BMS_TEMP2`, `BMS_VOLT`, `PWR_CONS`.
-  - `AKGYS_RPN` ve `SYS_STATUS`.
+### 3. Tanımlı Problem Çözümü: AKGYS (Intelligent Autonomy)
+2026 yılına özgü "Tanımlı Problem", Hyperloop sistemlerinin gelecekteki operasyonel güvenliğini temsil eder. **Akıllı Kapsül Güvenlik Yönetim Sistemi (AKGYS)**, podun içerisinde bir "süpervizör" gibi çalışarak; dekompresyon (basınç kaybı), batarya termal kaçakları (thermal runaway) veya yapısal titreşim anomallerini tespit eder. Bu sistem, yer istasyonuna (Section 5.2.5) bağımlı kalmaksızın, podun otonom olarak "GÜVENLİ DURUŞ" moduna geçmesini sağlayacak karar ağaçlarını ve risk analiz motorunu (FMEA/FTA) bünyesinde barındırır.
 
 ---
 
-## 🛡️ AKGYS ve Risk Analizi (Smart Security Engine)
+## ⚡ 2026 Teknik Şartname El Kitabı (Master Specifications)
 
-Akıllı Kapsül Güvenlik Yönetim Sistemi, podun "bilinçli" kısmıdır. 2026 şartnamesi Bölüm 4 uyarınca aşağıdaki mantıkla çalışır:
+### 📏 Tünel Geometrisi ve Fiziksel Sınırlar (Section 2)
+Test tüneli, 208 metre toplam uzunluğa sahip, iç çapı 1148 mm olan devasa bir çelik yapıdır. Podumuzun aerodinamik tasarımı, tünel iç yüzeyinin koyu rengi (Section 2.e) ve tünel betonuna monte edilmiş Alüminyum 6101-T6 (Alt Ray) / 6061-T6 (Kılavuz Ray) bileşenlerine göre optimize edilmiştir. 186 metrelik yarış parkuru boyunca, podun her 4 metrede bir karşılaştığı reflektör şeritleri (Section 7.b), navigasyon sistemimizin ana "mihenk taşlarını" oluşturur.
 
-| Parametre | Tespit Yöntemi | Kritik Eşik | Aksiyon |
+### 🛠️ Kapsül Mekanik ve Dinamik İsterleri (Section 3)
+Podumuz, 2026'nın zorlayıcı **250 kg** kütle limitini (Section 3.c) karşılamak için yüksek mukavemetli alüminyum alaşımları ve karbon fiber kompozitlerden üretilmiştir. Uzunluğu 3500 mm limitine kadar optimize edilebilen yapımızda, tüm bağlantı elemanları DIN/EN/ISO standartlarına (Section 3.l) uygun olarak kendinden kilitlemeli (nyloc) ve torklanmış marka işaretli olarak kurgulanmıştır. Podun arka kısmındaki kurtarma bağlantısı, 10mm diş derinliğiyle (Section 3.1.d), acil durumlarda podun tüm fren kuvvetinin 2 katına dayanacak şekilde şasiye kilitlenmiştir.
+
+### 🛑 Frenleme Protokolleri ve Fail-Safe Mimari (Section 4)
+Güvenliğimiz, "Tek Hata Toleransı" (Single Fault Tolerant) prensibi üzerine kuruludur. İki bağımsız fren mekanizması (Section 4.b), herhangi bir bileşen arızasında dahi podu emniyetli bir mesafe içerisinde durdurabilir. Yazılımımız, sistemde güç kaybı veya kritik bir sensör hatası tespit ettiğinde (Fail-Safe Mode), yay baskılı pnömatik frenleri 0.5 saniyenin altında (Section 4.k) aktif ederek podu tünel bariyerlerinden önce durdurur. Görsel ikaz sistemi (Section 4.l), frenlerin durumunu uzak mesafelerden dahi doğrulanabilir kılar.
+
+### 📡 Telemetri Yayını ve AEM Konfigürasyonu (Section 5)
+Haberleşme omurgamız, organizasyon tarafından sağlanan Ağ Erişim Modülü (AEM) ile entegredir. 20 Mbps bant genişliği ve <10ms gecikme süresiyle çalışan sistemimiz, DB9 konnektörü (Pin 9: Power, Pin 5: Ground) üzerinden 12-36V besleme alır. Her 1 saniyede bir yayınlanan 1Hz telemetri paketleri (Section 5.2.5.c); podun X-Y-Z kartezyen koordinatlarını, Pitch-Roll-Yaw oryantasyonunu, batarya hücresi başına düşen sıcaklık verilerini ve AKGYS'den gelen anlık risk öncelik numarasını (RPN) yer istasyonuna iletir.
+
+---
+
+## 🛡️ AKGYS: Akıllı Güvenlik ve Risk Yönetimi (Bölüm 4)
+
+AKGYS, podun otonom güvenlik bilincidir. 2026 Tanımlı Problem Çözümü kapsamında geliştirilen bu motor, sensör füzyonu verilerini kullanarak Monte Carlo simülasyonlarıyla doğrulanmış bir risk analizi yürütür:
+
+| Değişken | İzleme Yöntemi | Güvenlik Eşiği | AKGYS Aksiyonu |
 | :--- | :--- | :--- | :--- |
-| **İç Basınç** | Barometrik Sensör | < 0.5 Bar (Düşüş) | Acil Durdurma |
-| **Sıcaklık** | 10 Hücrede 1 Sensör | > 55°C | Güç Kesme + Fren |
-| **İvme** | 3-Eksenli IMU | > 2.5G (Anormal) | Uyarı / Stabilizasyon |
+| **Atmosferik Basınç** | Diferansiyel Barometre | 0.5 Bar (Ani Kayıp) | AUTO_EMERGENCY_STOP < 5s |
+| **Batarya Termal** | 10 Hücrede 1 Sensör | > 55°C (Kritik) | İtki Kesme + Thermal Guard |
+| **Navigasyon Sapması** | Reflektör vs. Encoder | > %5 Sapma Payı | Redundant Sensör Seçimi |
 
-**RPN Hesaplama Formülü:**
-`RPN = Şiddet (S) x Olasılık (O) x Tespit Edilebilirlik (D)`
-- `RPN > 50`: Otomatik Acil Durdurma (AUTO_EMERGENCY_STOP).
-- `RPN 25-50`: Operatör Uyarısı (WARNING_MODERATE).
+**Risk Öncelik Sayısı (RPN) Mantığı:**
+Podun `akgys.py` modülü, her modülden gelen anomali puanlarını `Şiddet x Olasılık x Tespit` çarpanlarıyla işler. `RPN > 50` olduğunda pod, yer istasyonundan komut beklemeden frenleri kilitler ve yolcu bilgilendirme sistemlerini (Bölüm 4.3.c.vi) "Tahliye Modu"na geçirir.
 
 ---
 
-## 🧠 Yazılım ve Kontrol Mimarisi (Architecture)
+## 🧠 Yazılım ve Kontrol Mimari (Software Internals)
 
-### PID Levitasyon Kontrolü
-Levitasyon modülümüz, manyetik hava aralığını 10.0mm'de sabit tutmak için çift katmanlı bir PID döngüsü kullanır:
-- **Kp (Proportional):** Hızlı tepki için optimize edildi.
-- **Ki (Integral):** Kalıcı hata payını (steady-state error) sıfırlar.
-- **Kd (Derivative):** Salınımı ve ani zıplamaları sönümler.
+### Modüler Kontrol Döngüsü
+Yazılımımız, asenkron çalışan ve birbirini denetleyen bağımsız modüllerden oluşur. Bu yapı, kodun test edilebilirliğini ve yarışma anındaki müdahale hızını maksimize eder:
 
-### Navigasyon: Reflektör Sayma Algoritması
-Tünel tavanındaki mikro-prizmatik reflektörleri okuyan lazer sensörleri, `navigation.py` içerisinde şu mantığı yürütür:
-1.  Her 4m'de bir "Normal Puls" üretilir.
-2.  Son 100m'de puls frekansı 80 kat artar (Son 100m İşaretçisi).
-3.  Sensör füzyonu ile Encoder verisi, Reflektör verisiyle çaprazlanır (Cross-check).
+1.  **Levitation Modülü:** PID kontrol döngüsü, 10.0mm hedef hava aralığını korurken, ray üzerindeki bozucu etkileri (disturbance rejection) sönümler.
+2.  **Navigation Modülü:** Reflektör sayma algoritması, tünelin son 100m ve 48m bölgelerindeki (Section 7.f/g) yüksek frekanslı şeritleri algılayarak dinamik frenleme haritasını günceller.
+3.  **Safety Modülü:** Batarya Yönetim Sistemi (BMS), her hücrenin gerilim ve sıcaklığını 80dB şiddetindeki buzzer/flaşör sistemiyle (Section 8.i) senkronize izler.
 
 ---
 
-## 🚀 Kurulum ve Kullanım (Setup Guide)
+## 🚀 Kurulum, Simülasyon ve Deploy (User Manual)
 
-### Gereksinimler
-- Python 3.9+
-- `numpy`, `matplotlib` (Simülasyon görselleştirme için)
+### Geliştirici Gereksinimleri
+- **Python:** 3.9 veya 3.10 (Stabilite için önerilir)
+- **Kütüphaneler:** Terminal üzerinde `pip install numpy matplotlib` komutlarıyla simülasyon araçlarını kurabilirsiniz.
 
-### Hızlı Başlangıç
+### Hızlı Görev Başlatma (Quick Start)
 ```bash
-# 1. Depoyu klonlayın
+# Depoyu yerel makinenize çekin
 git clone https://github.com/bahattinyunus/teknofest_hyperloop.git
-
-# 2. Dizin içerisine girin
 cd teknofest_hyperloop
 
-# 3. Bağımlılıkları yükleyin
+# Simülasyon ortamını hazırlayın
 pip install -r requirements.txt
 
-# 4. Ana Kontrol Beynini Çalıştırın
+# TEKNOFEST 2026 Simülasyonunu Ateşleyin
 python src/core/main_brain.py
 ```
 
 ---
 
-## 📅 Gelecek Planları (Roadmap)
-- [ ] **GUIdashboard:** 2026 AEM uyumlu gerçek zamanlı grafik arayüz.
-- [ ] **Hardware-in-the-Loop (HIL):** ESP32 tabanlı fiziksel kontrolcü entegrasyonu.
-- [ ] **AI-Predictive Maintenance:** RPN analizine LSTM tabanlı anomali tahmini eklenmesi.
+## 📅 Gelecek Planları ve Yol Haritası (Roadmap)
+- [ ] **GUIdashboard:** 2026 AEM standartlarına uyumlu, gerçek zamanlı web-tabanlı telemetri arayüzü.
+- [ ] **Hardware Synchronization:** Yazılımın, fiziksel STM32 veya ESP32 kontrolcüleri ile Hardware-in-the-Loop (HIL) modunda çalıştırılması.
+- [ ] **Advanced AI Diagnostics:** Anomali tespiti için kural tabanlı algoritmaların yerine, LSTM tabanlı yapay zeka modellerinin entegrasyonu.
 
 ---
 <div align="center">
-    <img src="https://img.shields.io/badge/Powered%20by-Python%203.9-blue?style=for-the-badge&logo=python" alt="Python">
+    <img src="https://img.shields.io/badge/Developed%20for-TEKNOFEST%202026-E1306C?style=for-the-badge&logo=tesla" alt="Teknofest">
     <br>
-    <i>"Gelecek, hızlanarak gelir."</i><br>
+    <i>"Gelecek, Türk Gençliğinin Ellerinde Hızlanarak Geliyor."</i><br>
     <b>TEKNOFEST 2026 HYPERLOOP TEAM</b>
 </div>
