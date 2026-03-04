@@ -19,7 +19,7 @@
 ![Teknofest](https://img.shields.io/badge/Mission-TEKNOFEST_2026-red?style=for-the-badge&logo=target)
 ![Category](https://img.shields.io/badge/Category-MULTI--DOMAIN-orange?style=for-the-badge&logo=aircanada)
 
-**"Sınırları Zorlayan Hız, Akılla Birleşen Güvenlik ve Geleceği Tasarlayan Milli Mühendislik Hamlesi."**
+**"Sınırları Zorlayan Hız, Akılla Birleşen Güvenlik ve Of, Trabzon'un Mühendislik Ruhuyla Geleceği Tasarlayan Milli Hamle."**
 
 </div>
 
@@ -120,6 +120,6 @@ python src/core/main_brain.py
 <div align="center">
     <img src="https://img.shields.io/badge/Developed%20for-TEKNOFEST%202026-E1306C?style=for-the-badge&logo=tesla" alt="Teknofest">
     <br>
-    <i>"Gelecek, Türk Gençliğinin Ellerinde Hızlanarak Geliyor."</i><br>
-    <b>TEKNOFEST 2026 HYPERLOOP TEAM</b>
+    <i>"Gelecek, Of'un azmi ve Türk Gençliğinin ellerinde hızlanarak geliyor."</i><br>
+    <b>TEKNOFEST 2026 HYPERLOOP TEAM - OF/TRABZON</b>
 </div>
