@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.png" alt="Teknofest 2026 Hyperloop Banner" width="100%">
+</p>
+
 <div align="center">
 
 ```text
