@@ -1,0 +1,354 @@
+ 
+1 
+ 
+ 
+ 
+HYPERLOOP 
+GELİŞTİRME 
+YARIŞMASI 
+ 
+ 
+BÖLÜM 4 
+TANIMLI PROBLEM ÇÖZÜMÜ 
+KATEGORİSİ KURALLARI  
+ 
+2026 
+ 
+ 
+ 
+ 
+ 
+2 
+ 
+ 
+ 
+SÜRÜMLER 
+Sürüm 
+Tarih 
+Değişiklikler 
+Y5.V1.0 
+02.03.2026 
+5. Hyperloop Geliştirme Yarışması; İlk Yayın 
+ 
+3 
+İÇİNDEKİLER 
+İÇİNDEKİLER ........................................................................................................................... 3 
+KISALTMALAR ......................................................................................................................... 4 
+1. 
+İLGİLİ MEVZUAT ................................................................................................................ 5 
+2. 
+GİRİŞ ............................................................................................................................... 6 
+3. 
+PROBLEM TANIMI ............................................................................................................. 7 
+4. 
+DEĞERLENDİRME KRİTERLERİ VE PUANLAMA .................................................................... 9 
+5. 
+TANIMLI PROBLEM ÇÖZÜMÜ KATEGORİSİ ÖDÜLÜ VE HAZIRLIK DESTEĞİ ........................... 10 
+6. 
+SORUMLULUK BEYANI VE İLETİŞİM .................................................................................. 11 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 
+KISALTMALAR 
+DDK 
+: 
+Danışma ve Değerlendirme Kurulu 
+TÜBİTAK 
+: 
+Türkiye Bilimsel ve Teknolojik Araştırma Kurumu 
+T3 
+: 
+Türkiye Teknoloji Takımı 
+KYS 
+: 
+Kurumsal Yönetim Sistemi 
+RUTE 
+: 
+Raylı Ulaşım Teknolojileri Enstitüsü 
+FMEA 
+: 
+Failure Modes and Effects Analysis (Hata Türleri ve Etkileri Analizi) 
+FTA 
+: 
+Fault Tree Analysis (Hata Ağacı Analizi) 
+HAZOP 
+: 
+Hazard and Operability (Tehlike ve İşletilebilirlik Analizi) 
+STPA 
+: 
+System Theoretic Process Analysis (Sistem Teorik Süreç Analizi) 
+IEC 
+: 
+International Electrotechnical Commission 
+EN 
+: 
+European Norm 
+ISO 
+: 
+International Organization for Standardization 
+ 
+ 
+ 
+ 
+5 
+1. İLGİLİ MEVZUAT 
+2026 Hyperloop Geliştirme Yarışması, dokuz (9) ayrı resmi kural kitapçığı çerçevesinde 
+yürütülecektir. Yarışmacılar, yarışma süresince kural kitapçıklarının güncel sürümlerini 
+takip etmek ve belirtilen tüm kural ve gereksinimlere uymakla yükümlüdür. Başvuru 
+işlemini tamamlayan tüm yarışmacılar, bu şartları kabul etmiş sayılacaktır. 
+• BÖLÜM 1 – İdari ve Mali Kurallar  
+• BÖLÜM 2 – Performans Kategorisi Teknik Kuralları  
+• BÖLÜM 3 – Teknoloji Gösterim Kategorisi Teknik Kuralları 
+• BÖLÜM 4 – Tanımlı Problem Çözümü Kategorisi Kuralları 
+• BÖLÜM 5 – Teknik Tasarım Raporu Kuralları 
+• BÖLÜM 6 – Rapor Yazım Kılavuzu 
+• BÖLÜM 7 – Final Yarışmaları Teknik Kontrol ve Yarışma Kuralları 
+• BÖLÜM 8 – Yarış Haftası Programı 
+• BÖLÜM 9 – Hazırlık Kampı Programı 
+TÜBİTAK Hyperloop Geliştirme Yarışması Komitesi, yarışmanın resmi kural kitapçıklarında 
+değişiklik yapma hakkını saklı tutar. 
+ 
+ 
+ 
+6 
+2. GİRİŞ 
+a) Tanımlı Problem Çözümü Kategorisi; gelişmekte olan tam ölçekli Hyperloop 
+sistemlerinin tasarım, entegrasyon, işletme ve güvenlik aşamalarında karşılaşılması 
+muhtemel mühendislik problemlerinin, TÜBİTAK tarafından önceden tanımlanarak 
+takımlarla paylaşılması ve bu problemlere yönelik akademik temelli, yenilikçi ve 
+uygulanabilir çözümler geliştirilmesini kapsar. 
+b) Bu kategorinin amacı; Hyperloop teknolojilerinin henüz yaygın uygulama alanı 
+bulmamış olması nedeniyle, ilerleyen aşamalarda ortaya çıkabilecek kritik teknik ve 
+operasyonel problemlerin erken safhada ele alınmasını sağlamak, bu problemlere 
+yönelik öngörü, analiz ve çözüm yetkinliği geliştirilmesine katkıda bulunmaktır. 
+c) Bu kategori kapsamında takımlardan; fiziksel bir kapsül veya alt sistem üretimi zorunlu 
+olmaksızın, tanımlanan probleme sistematik bir mühendislik yaklaşımı ile çözüm 
+üretmeleri beklenir. 
+d) Tanımlı Problem Çözümü Kategorisi, katılımcı takımların: 
+• Sistem mühendisliği bakış açısını geliştirmesini, 
+• Karmaşık ve çok disiplinli mühendislik problemlerini analiz edebilmesini, 
+• Gerçekçi, doğrulanabilir ve uygulanabilir çözüm önerileri sunmasını, 
+• Akademik bilgi ile teknolojik uygulamayı bir araya getirmesini 
+amaçlamaktadır. 
+e) Bu kategori, yarışma organizasyonu tarafından belirlenen ve takımlara ilan edilen tek 
+bir problem veya problem seti üzerinden yürütülür. 
+f) Problem tanımı; sistem, alt sistem, operasyon, güvenlik, bakım, kontrol, haberleşme, 
+insan-makine etkileşimi veya benzeri Hyperloop odaklı mühendislik alanlarını 
+kapsayabilir. Detaylı bilgi bu kitapçıkta yer almaktadır. 
+g) Takımlar, çözüm önerilerini mühendislik metodolojilerine uygun şekilde dokümante 
+etmekle yükümlüdür. 
+h) Fiziksel prototip zorunlu olmamakla birlikte, çözümün doğrulanmasını destekleyecek 
+basit prototip, simülasyon, demonstratör veya yazılımsal araçlar sunulabilir.
+ 
+7 
+3. PROBLEM TANIMI 
+a) Problem Tanımı 
+Hyperloop kapsülü içerisinde meydana gelebilecek kritik bir olağan dışı durumun; 
+• Erken tespiti, 
+• Olasılık temelli risk değerlendirmesi, 
+• Otomatik ve güvenli tepki üretimi, 
+• Yolcu ve operatör bilgilendirmesi 
+işlevlerini yerine getiren çok katmanlı, hata toleranslı ve güvenlik odaklı bir Akıllı Kapsül 
+Güvenlik Yönetim Sistemi (AKGYS) tasarlanmalıdır. 
+b) Sistem Kapsamı ve Sınırlar 
+Tasarlanacak sistem; 
+• Yalnızca kapsül içi sensör verilerini kullanacaktır. 
+• Harici kontrol merkezine bağımlı olmadan otonom karar verecektir. 
+• En az tek hata toleranslı (Single Fault Tolerant) olacaktır. 
+• Güvenli duruş kararını maksimum 5 saniye içerisinde verebilecektir. 
+• Fail-safe mimari prensiplerine uygun olacaktır. 
+c) Zorunlu Teknik Gereksinimler 
+Takımlar aşağıdaki teknik unsurları çözümünde göstermek zorundadır: 
+i. 
+Sensör Füzyonu 
+• En az 3 farklı sensör türü (örneğin sıcaklık, basınç, ivme, gaz sensörü, 
+biyometrik sensör) 
+• Veri bütünlüğü kontrolü 
+• Gürültü filtreleme yaklaşımı 
+ii. 
+Risk Analizi Metodolojisi 
+Aşağıdaki yöntemlerden en az biri zorunludur: 
+• FMEA 
+• FTA 
+• HAZOP 
+• STPA 
+Risk öncelik sayısı (RPN) hesaplanmalıdır. 
+iii. 
+Güvenlik Seviyesi Referansı 
+Takımlar sistemlerini aşağıdaki standartlardan en az biriyle ilişkilendirmelidir: 
+• IEC 61508 (Fonksiyonel Güvenlik) 
+• EN 50126 / 50129 (Raylı Sistem Güvenliği) 
+ 
+8 
+• ISO 26262 (Fonksiyonel Güvenlik) 
+Tam uyum zorunlu değildir ancak kavramsal eşleştirme yapılmalıdır. 
+iv. 
+Karar Mekanizması 
+Sistem aşağıdakilerden birini içermelidir: 
+• Kural tabanlı algoritma 
+• Durum makinesi (State Machine) 
+• Bayes tabanlı karar sistemi 
+• Yapay zeka destekli anomali tespiti 
+Karar mantığı blok diyagram ve akış diyagramı ile gösterilmelidir. 
+v. 
+Senaryo Analizi 
+En az: 
+• 3 normal işletme senaryosu 
+• 3 hata senaryosu 
+• 1 zincirleme arıza senaryosu 
+Simülasyon veya hesaplamalı analiz ile desteklenmelidir. 
+vi. 
+İnsan Faktörü Analizi 
+• Yolcu bilgilendirme süresi 
+• Panik azaltıcı arayüz tasarımı 
+• Ergonomik uyarı seviyesi 
+• Yanlış alarm oranı (%) 
+vii. 
+Doğrulama 
+Aşağıdakilerden en az biri yapılmalıdır: 
+• Monte Carlo simülasyonu 
+• Donanım-simülasyon entegrasyonu 
+• SIL seviyesi tahmini 
+• Hata enjeksiyon testi 
+ 
+ 
+ 
+9 
+4. DEĞERLENDİRME KRİTERLERİ VE PUANLAMA 
+Bu kategori kapsamında sunulan çalışmalar, Danışma ve Değerlendirme Kurulu (DDK) 
+tarafından aşağıda belirtilen kriterler doğrultusunda değerlendirilir: 
+Tablo 1. Değerlendirme Kriterleri ve Puanları 
+Kriter 
+Açıklama 
+Maks. 
+Puan 
+Gereksinim Analizi 
+Tanımlanan problemin teknik, operasyonel ve 
+fonksiyonel 
+gereksinimlerinin 
+doğru 
+ve 
+eksiksiz şekilde ortaya konulması. 
+100 
+Risk ve Güvenlik Analizi 
+Önerilen çözüm kapsamında oluşabilecek 
+teknik, operasyonel ve güvenlik risklerinin 
+belirlenmesi ve bu risklere yönelik önlemlerin 
+tanımlanması. 
+200 
+Sistem Mimarisi 
+Çözümün sistem seviyesinde mimarisinin, alt 
+bileşenleri ve aralarındaki ilişkileri gösterecek 
+şekilde sunulması. 
+150 
+Karar Mekanizması 
+Derinliği 
+Sistem davranışını belirleyen algoritmaların, 
+kontrol 
+mantıklarının 
+veya 
+karar 
+mekanizmalarının açık ve izlenebilir biçimde 
+tanımlanması. 
+200 
+Senaryo ve Simülasyon 
+Normal işletme, sınır durumlar ve hata 
+senaryoları 
+altında 
+çözümün 
+nasıl 
+davrandığının 
+senaryolar 
+üzerinden 
+gösterilmesi. 
+150 
+Doğrulama ve Güvenlik 
+Seviyesi 
+Geliştirilen 
+çözümün 
+hedeflenen 
+gereksinimleri ne ölçüde karşıladığının analiz 
+edilmesi ve elde edilen sonuçların teknik bir 
+rapor ile sunulması. 
+150 
+Prototip/Demonstrasyon 
+Çözümün çalışabilirliğini destekleyen, fiziksel 
+veya dijital (simülasyon, yazılım, model vb.) 
+basit prototip veya demonstrasyon. 
+50 
+Sunum 
+Tasarlanan sistemin hazırlanan sunum ile 
+başarılı bir şekilde aktarılması 
+200 
+ 
+ 
+ 
+10 
+5. TANIMLI PROBLEM ÇÖZÜMÜ KATEGORİSİ ÖDÜLÜ VE HAZIRLIK DESTEĞİ 
+a) Bu kategoride verilen problemin çözümüne ilişkin sunulan raporlar DDK tarafından 
+Bölüm 1 ve 4’te yer alan teknik kurallara göre değerlendirilir. 
+b) Sunulan çözümün teknik derinliği, probleme yapılan mühendislik yaklaşımı ve 
+kullanılan analiz yöntemleri bu kategorinin değerlendirilmesinde önem arz etmektedir. 
+c) Bu kategoriye başvuran takımlar hazırlanan raporun içeriği ile uyumlu bir sunum 
+hazırlayarak DDK’ya çözümünü sunacaktır. Sunuma katılmayan takımlar ödül almaya 
+hak kazanmayacaktır. 
+d) Sunulan raporun yazım kurallarına uygunluğu, çözümün teknik derinliği, çözümün 
+özgünlüğü ve yeniliği, hazırlanan ve yapılan sunumun başarısı kategori puanının 
+oluşmasını sağlayacaktır. Kategori puanlaması aşağıdaki şekilde hesaplanacaktır. 
+TPÇK Puanı = Rapor Puanı + Sunum Puanı 
+e) Bu kategoride en yüksek puanı alan ilk üç (3) takım ödül almaya hak kazanacaktır. 
+Tablo 2. TPÇK Ödülleri 
+ÖDÜL ADI 
+TUTARI 
+Birincilik Ödülü 
+100.000 ₺ 
+İkincilik Ödülü 
+75.000 ₺ 
+Üçüncülük Ödülü 
+50.000 ₺ 
+f) Tanımlı Problem Çözümü Kategorisine başvuran takımlara bu kategori kapsamında 
+hazırlık desteği verilmeyecektir. 
+ 
+ 
+ 
+ 
+11 
+6. SORUMLULUK BEYANI VE İLETİŞİM 
+a) T3 Vakfı, TEKNOFEST ve TÜBİTAK, yarışmacıların teslim etmiş olduğu herhangi bir 
+üründen veya yarışmacıdan kaynaklanan herhangi bir yaralanma veya hasardan hiçbir 
+şekilde sorumlu değildir.  
+b) Yarışmacıların 3. kişilere verdiği zararlardan T3 Vakfı, TÜBİTAK ve organizasyon 
+yetkilileri sorumlu değildir. T3 Vakfı, TEKNOFEST ve TÜBİTAK, takımların kendi 
+sistemlerini 
+Türkiye 
+Cumhuriyeti 
+yasaları 
+çerçevesinde 
+hazırlamalarını 
+ve 
+uygulamalarını sağlamaktan sorumlu değildir. 
+c) Türkiye Teknoloji Takımı Vakfı ve TÜBİTAK işbu şartnamede her türlü değişiklik 
+yapma hakkını saklı tutar. 
+d) Başvuru ve rapor yükleme için: https://www.t3kys.com 
+e) Faturalandırma ve Destek İadesi için: rute.hyperloop@tubitak.gov.tr 
+f) Bilgi ve duyurular için: www.teknofest.org  
+g) Sorularınız için: https://groups.google.com/u/0/g/hyperloop-geltrme-yarimasi?hl=tr 
+ 
+12 
+ 

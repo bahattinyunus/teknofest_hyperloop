@@ -1,0 +1,1277 @@
+ 
+1 
+ 
+ 
+ 
+HYPERLOOP 
+GELİŞTİRME 
+YARIŞMASI 
+ 
+ 
+BÖLÜM 2 
+PERFORMANS KATEGORİSİ TEKNİK 
+KURALLAR  
+ 
+2026 
+ 
+ 
+ 
+ 
+ 
+2 
+ 
+ 
+ 
+ 
+SÜRÜMLER 
+Sürüm 
+Tarih 
+Değişiklikler 
+Y5.V1.0 
+25.02.2026 
+5. Hyperloop Geliştirme Yarışması; İlk Yayın 
+ 
+3 
+İÇİNDEKİLER 
+İÇİNDEKİLER ............................................................................................................ 3 
+1. 
+İLGİLİ MEVZUAT ................................................................................................. 4 
+2. 
+TÜNELİN ÖZELLİKLERİ ........................................................................................ 5 
+3. 
+KAPSÜL MEKANİK GEREKSİNİMLERİ .................................................................... 7 
+3.1. 
+Kapsül Kurtarma Bağlantı Parçası ................................................................. 9 
+4. 
+KAPSÜL FREN SİSTEMİ ..................................................................................... 12 
+5. 
+HABERLEŞME SİSTEMİ ..................................................................................... 15 
+5.1. 
+Haberleşme Sistem Mimarisi ...................................................................... 15 
+5.2. 
+Haberleşme Kuralları ................................................................................. 15 
+5.2.1. 
+IP Adresleme ....................................................................................... 16 
+5.2.2. 
+Tünel Giriş Alanı Ağ Erişimi ................................................................... 16 
+5.2.3. 
+Kapsül-Ağ Erişimi Modülü Montajı ve Konumlandırması ......................... 16 
+5.2.4. 
+Alternatif Ağ Erişimi Modülü Montajı ve Konumlandırma ......................... 17 
+5.2.5. 
+Kapsül ve Uzak Kontrol Bilgisayarı Arasındaki Telemetri İçeriği ................ 17 
+6. 
+KAPSÜL İTKİ SİSTEMİ ........................................................................................ 19 
+7. 
+NAVİGASYON SİSTEMİ ...................................................................................... 21 
+7.1. 
+Kapsül Navigasyon Kuralları ........................................................................ 22 
+8. 
+GÜVENLİK İSTERLERİ ....................................................................................... 24 
+9. 
+TEST VİDEOSU ................................................................................................. 26 
+9.1. 
+İtki Test Videosu ......................................................................................... 26 
+9.1.1.Giriş ........................................................................................................ 26 
+9.1.2.Yöntem ................................................................................................... 26 
+10. 
+SORUMLULUK BEYANI VE İLETİŞİM ................................................................ 28 
+EK1. TEKNİK KONTROL ÇİZELGELERİ ....................................................................... 29 
+ 
+ 
+4 
+1. İLGİLİ MEVZUAT 
+2026 Hyperloop Geliştirme Yarışması, dokuz (9) ayrı resmi kural kitapçığı çerçevesinde 
+yürütülecektir. Yarışmacılar, yarışma süresince kural kitapçıklarının güncel versiyonlarını 
+takip etmek ve belirtilen tüm kural ve gereksinimlere uymakla yükümlüdür. Başvuru 
+işlemini tamamlayan tüm yarışmacılar, bu şartları kabul etmiş sayılacaktır. 
+• BÖLÜM 1 – İdari ve Mali Kurallar 
+• BÖLÜM 2 – Performans Kategorisi Teknik Kurallar 
+• BÖLÜM 3 – Teknoloji Gösterim Kategorisi Teknik Kurallar 
+• BÖLÜM 4 – Tanımlı Problem Çözüm Kategorisi Kuralları 
+• BÖLÜM 5 – Teknik Tasarım Raporu Kuralları 
+• BÖLÜM 6 – Rapor Yazım Kılavuzu 
+• BÖLÜM 7 – Final Yarışmaları Teknik Kontrol ve Yarışma Kuralları 
+• BÖLÜM 8 – Yarış Haftası Programı 
+• BÖLÜM 9 – Hazırlık Kampı Programı 
+TÜBİTAK Hyperloop Geliştirme Yarışması Komitesi, yarışmanın resmi kural kitapçıklarında 
+değişiklik yapma hakkını saklı tutar. 
+ 
+ 
+ 
+5 
+2. TÜNELİN ÖZELLİKLERİ 
+a) Hyperloop Test Tüneli, 208 metre uzunluğunda çelik malzemeden inşa edilmiş bir test 
+yapısıdır. 
+b) Tünel içerisindeki alüminyum ray bileşenleri beton zemin üzerine konumlandırılmıştır. 
+a) Tünel yapısında ön ve arka olmak üzere iki kapak mevcuttur. Giriş-çıkış işlemleri 
+yalnızca ön kapak üzerinden gerçekleştirilmektedir. Arka kapak, teknik gereklilikleri 
+sebebiyle yarışmacı/personel/kapsül giriş-çıkışına uygun değildir. 
+c) Tünel sisteminin belirlenen hareket alanının sonunda güvenlik önlemi olarak darbe 
+sönümleyici bariyerler bulunmaktadır. Bu bariyerlerle olası bir çarpışma, kapsülde 
+ciddi yapısal hasara neden olabilmektedir. Bu nedenle, takımların araç tasarımlarında 
+hareket kontrolü ve frenleme sistemlerini bu güvenlik faktörünü dikkate alarak 
+optimize etmeleri gerekmektedir. 
+d) Tünel içerisindeki basınç değeri atmosferik basınca eşdeğerdir. 
+e) Tünel iç yüzeyi koyu renktedir. Bu nedenle, takımların sensör seçimlerini bu koşula 
+uygun şekilde yapmaları gerekmektedir. 
+f) Tünele ilişkin diğer teknik özellikler aşağıdaki tabloda sunulmaktadır. 
+g) Teknik resim görselinde belirtildiği üzere, tünel betonuna monte edilmiş alüminyum 
+ray ve alt ray bileşenlerinin kesit ölçüleri, ana rayın her iki yanında konumlandırılmıştır. 
+Tablo 1. Tünel yapısının fiziksel özellikleri 
+Tanım 
+Açıklama 
+Tünel Dış Çapı 
+1168 mm 
+Tünel İç Çapı 
+1148 mm 
+Et Kalınlığı 
+10 mm 
+Uzunluğu 
+208 metre (toplam tünel uzunluğu) 
+186 metre (yarışma parkur uzunluğu) 
+Alt Plaka Malzemesi 
+Alüminyum 6101-T6 
+Alt Plaka Pürüzlüğü 
+125 RMS 
+Alt Plaka Kalınlığı 
+12,7 mm 
+Beton Yüksekliği 
+150 mm 
+Kılavuz Ray Malzemesi 
+Alüminyum 6061-T6 
+ 
+6 
+ 
+Şekil 1. Tünel yapısına ait kesit örneği 
+ 
+Şekil 2. Tünel yapısına ait kesit teknik resmi 
+ 
+ 
+ 
+7 
+3. KAPSÜL MEKANİK GEREKSİNİMLERİ 
+a) Kapsülün enerji sistemleri devre dışı kaldığında (kapsül üzerindeki tüm elektriksel 
+cihazlara olan güç akışının kesilmesi, vb.), fren sisteminin manuel olarak devre dışı 
+bırakılması ve kapsülün fiziksel müdahale ile hareket ettirilebilmesi sağlanmalıdır. 
+b) Kapsül, manuel taşıma veya kaldırma ekipmanı ile nakliye operasyonlarına uygun 
+olarak tasarlanmalıdır. 
+c) Kapsülün toplam ağırlığı 250 kg’ı aşmamalıdır.  
+d) Kapsülün taşıma sistemi, dış kabuk tasarımı göz önünde bulundurularak 
+planlanmalıdır. Raya yerleştirme ve raydan çıkarma işlemleri sırasında kabuk altında 
+konumlandırılan taşıma blarının (kulp, tutacak vb.) erişilebilir olması önem arz 
+etmektedir. Kapsülün dengeli taşınmasını sağlayacak şekilde konumlandırılan taşıma 
+ekipmanlarının her birine düşen yük 20 kg’ı geçemez. Kabuk tasarımında ray sistemi 
+için gerekli boşlukların bırakılması gerekmektedir. Ayrıca, dış kabuk tasarımı acil 
+durum ve kurtarma operasyonlarında müdahale süreçlerini engellemeyecek şekilde 
+optimize edilmelidir. 
+e) Teknik kontrollere ve tünele kabuk ile girecek takımlara ek puan verilecektir. Kabuk, 
+teknik kontrolleri engellemeyecek şekilde tasarlanmalıdır. Gerekirse kabuğun 
+montajı/demontajı kolay yapılabilecek şekilde tasarlanmalıdır. DDK’nın teknik 
+kontroller esnasında kabuğun çıkarılması gerektiğine karar vermesi durumunda 
+kabuğun montajı/demontajı takım üyeleri tarafından gerçekleştirilecektir. 
+f) Kapsül uzunluğu 300 mm ile 3500 mm arasında olmalıdır. Kapsül tasarımı, belirtilen 
+tünel/boru kesit ölçülerine uygun olarak yapılacaktır. Kapsül kesit tasarımında 
+kullanılacak tüm kritik ölçü ve toleranslar teknik dokümanda belirtilmiştir. 
+g) Ağırlığı 120 kilogramı aşan kapsüllerde, yarışma alanındaki taşıma ve platform 
+operasyonları için sabit veya sökülebilir kaldırma mapaları bulundurulması 
+zorunludur. 
+Mapalar 
+kapsülün 
+dengeli 
+taşınmasını 
+sağlayacak 
+şekilde 
+konumlandırılmalıdır. Kaldırma mapası bulunmayan sistemlerin yarışmaya katılım 
+durumu DDK tarafından değerlendirilir. 
+h) Kapsüllerin tünel içerisinde kalması veya başlangıç noktasına geri dönememesi 
+durumunda güvenli çıkarma işlemini sağlamak amacıyla, kapsülün arka kısmında 
+standart bir kurtarma bağlantı noktası bulundurulması zorunludur. Bağlantı 
+noktasının teknik özellikleri Kapsül Kurtarma Bağlantı Parçası başlığında açıklanmıştır. 
+i) Kapsül şasisi, alt sistemlerin ağırlık ve yüklerini karşılayacak şekilde yüksek 
+mukavemet ve minimum esneme özelliklerine sahip olmalıdır. 
+j) Kapsülde keskin kenar/köşe kalmamasına özen gösterilmelidir. 
+k) Kapsül, üç eksende (x, y, z) ve belirlenmiş yük koşulları altında (maksimum fren kuvveti 
+dahil) test edilebilir. Bu yük koşulları altında şasinin rijitliği gözlemlenecektir. Bu test 
+ 
+8 
+sürecinde deformasyon miktarı ve diğer teknik parametreler ölçülecektir. Bu ölçüm 
+sonuçları değerlendirme kriterleri kapsamında incelenecek olup, gerekli şartların 
+karşılanmaması durumunda yarışma katılım onayı verilmeyebilecektir. 
+l) Tüm bağlantı elemanları DIN/EN/ISO standartlarına uygun olmalı, kendinden 
+kilitlemeli sistemler kullanılmalı ve uygun tork değerlerinde sıkılarak kalıcı işaretleme 
+(marka kalemi ile) yapılmalıdır. 
+m) Teknik Tasarım Raporunda bağlantı elemanlarının tipleri, adetleri, uygulanacak tork 
+değerleri ve ilgili standartlar detaylı olarak belirtilmelidir. 
+n) Teknik Kontrol ve Yarışma Aşaması arasındaki süreçte, DDK'nın özel bir kararı olmadığı 
+takdirde alt sistemlerde değişiklik yapılması ve aracın ağırlığını etkileyecek 
+müdahaleler kesinlikle yasaktır. 
+o) Kapsül tasarımları, Teknik Tasarım Raporunda belirtilen spesifikasyonlarla uyumlu 
+olmalıdır. Takımlar, teknik kontroller esnasında Teknik Tasarım Raporunda yer alan 
+teknik çizimleri ibraz etmelidir. 
+p) Yarışma süresince her takıma bir (1) adet Ağ Erişim Modülü tahsis edilecektir. Kapsül 
+tasarımında, Ağ Erişim Modülünün montajı için gerekli alan ayrılması zorunludur. Ağ 
+Erişim Modülü plakası, tünel/boru içerisindeki beton yüzeye paralel konumda monte 
+edilmelidir. Montaj için, Ağ Erişim Modülü teknik çiziminde belirtilen noktalarda 4 adet 
+M6x1 (20 mm uzunluğunda) montaj deliği bulunmalıdır. Plakanın 300 mm'lik boyutu, 
+kapsülün hareket yönü ile aynı eksende olmalıdır. 
+ 
+Şekil 3. Ağ erişim modülü takılı kapsülün görünümü 
+ 
+9 
+ 
+Şekil 4. Ağ erişim modülünün üstten ve yandan görünümü 
+ 
+Şekil 5. Ağ erişim modülü plakasının montaj delik ölçüleri 
+q) Ağ Erişim Modülü ve Ağ Erişim Modülü plakasının genel ölçüleri Şekil 4 ve Şekil 5'te 
+detaylı olarak gösterilmektedir. Takımların sorumluluğu, Ağ Erişim Modülü için 
+belirlenen hacme kapsül içi Ethernet ve güç kablolarının bağlantısını sağlamaktır. 
+Kapsül içi kamera sistemini tercih eden takımlar, kamera Ethernet kablosunun 
+modüle uygun şekilde bağlantısını gerçekleştirmekle yükümlüdür. 
+r) Ağ Erişim Modülünün aerodinamik gereksinimler doğrultusunda kapatılması 
+mümkündür. Kullanılacak malzemenin elektromanyetik geçirgenlik özelliklerine 
+uygun olması ve sinyal kalitesinin korunması takımın yükümlülüğündedir. 
+s) Fren sisteminde basınçlı tüp kullanımı durumunda, sistem güvenliği için basınç 
+değerinin belirlenen limitleri aşması halinde tahliye vanası bulundurulması 
+zorunludur. 
+3.1. Kapsül Kurtarma Bağlantı Parçası 
+a) Kapsülün tünelde kalması durumunda güvenli bir şekilde çekilebilmesi için, kapsülün 
+arka tarafında Şekil-6 da detayları verilen plakanın bulunması gerekmektedir. Bu 
+plakaya sahip olmayan ya da uygun bir konumda montajı yapılmamış (Şekil-6) 
+kapsüllerin tünelde yarışmasına izin verilememektedir. 
+ 
+10 
+b) Fren kuvveti ölçümü, kapsül kurtarma bağlantı parçası üzerinden yapılacaktır. 
+c) Plaka, şasi bağlantıları ve şasinin kendisi; resimde görülen dişler üzerinden 
+uygulanacak 
+çekme 
+kuvvetine 
+karşı 
+yeterli 
+dayanımı 
+sağlayacak 
+şekilde 
+tasarlanmalıdır. Tasarımda esas alınacak çekme kuvveti, kapsül fren hesaplamaları 
+sonucunda bulunan frenleme kuvvetinin 2 katı ile kapsül ağırlığının 2 katından büyük 
+olan değer olacaktır. 
+d) Plakanın kalınlığının ve diş derinliklerinin en az 10 mm olması gerekmektedir.  
+e) Plaka malzemesi olarak çelik ya da alüminyum kullanılabilir. Bunların haricinde 
+malzeme kullanılması durumunda diş yuvalarına helicoil takılmalıdır.  
+f) Kapsülü kurtarmak için gerekli adaptör parçanın takılabilmesi amacıyla, plakanın 
+tünel giriş kapağına bakan yüzeyinde (kurtarma yüzeyi) herhangi bir çıkıntı 
+bulunmamalıdır. Cıvatalı bağlantı yapılması durumunda cıvata kafaları plakaya 
+gömülü olmalı ve kurtarma yüzeyinde çıkıntı oluşturulmamalıdır. Plakanın diğer 
+yüzeyi, kapsüle bağlantı şekline göre takımlar tarafından uygun şekilde tasarlanarak 
+sabitlenebilir. Ayrıca, kapsül kurtarma bağlantı parçasından itibaren kapsül üzerinde 
+konumlandırılan hiçbir parça, kurtarma aracı adaptörünün takılmasını engelleyecek 
+veya kurtarma bağlantı parçası yüzeyinden taşacak şekilde tasarlanmamalıdır (Şekil-
+7a ve Şekil7-b). 
+g) TÜBİTAK tarafından takımlara yarış öncesinde verilecek adaptör parça, kapsüllerde 
+bulunan plakaya resimde belirtilen M8x1,25 delikler kullanılarak monte edilecektir. 
+ 
+Şekil 6. Kapsül Kurtarma Bağlantı Parçası 
+ 
+11 
+ 
+ 
+ 
+Şekil 7a. Uygun Kapsül Kurtarma Bağlantı Parçası Yerleşimi 
+ 
+ 
+Şekil 7b. Uygun Olmayan Kapsül Kurtarma Bağlantı Parçası Yerleşimi
+ 
+12 
+4. KAPSÜL FREN SİSTEMİ 
+a) Her kapsül için fren sistemi zorunludur. Frenleme kuvvetlerine karşı kapsül 
+güvenliğinin sağlanması takımların sorumluluğundadır. 
+b) Fren sistemi, ön ve arka olmak üzere iki bağımsız fren mekanizmasından oluşmalıdır. 
+Her iki fren sisteminin eş zamanlı aktivasyonu sağlanmalıdır. 
+c) Fren sistemi kademeli olarak tasarlanabilmektedir. Kademeli sistemlerde bir 
+kademenin acil durum senaryoları için tahsis edilmesi gerekmektedir. Tek kademeli 
+fren sistemlerinde ise fren sistemi, acil durum senaryolarının tüm gerekliliklerini 
+karşılamalıdır. 
+d) Takım tarafından tüm fren kademeleri için hesaplanmış güvenli durma mesafeleri ve 
+yavaşlama ivmeleri Teknik Tasarım Raporunda belirtilecektir. Teknik kontrol 
+aşamasında yavaşlama ivmeleri ölçümlenecek ve değerlendirme sürecinde göz 
+önünde bulundurulacaktır. 
+e) Kapsül fren sistemi, kapsülü herhangi bir hızda güvenli ve kontrollü bir şekilde 
+durdurabilmelidir. Durma mesafesi, Teknik Tasarım Raporu'nda belirtilen maksimum 
+değerleri aşmamalıdır. 
+f) Ön veya arka fren sistemlerinden birinin işlevini kaybetmesi durumunda, çalışır 
+durumdaki diğer fren sistemi aracı emniyetli bir şekilde ve yeterli mesafe içerisinde 
+durdurabilmelidir. 
+g) Frenleme sistemi, gerekli teknik şartları karşılamak koşuluyla aerodinamik, manyetik 
+veya mekanik sistemlerden oluşabilir. Acil durumlarda, bu sistemlerden herhangi biri 
+veya tamamı kapsülü belirlenen güvenli mesafe içerisinde durdurabilme kapasitesine 
+sahip olmalıdır. 
+h) Ray hattı üzerinde herhangi bir yardımcı frenleme sistemi (yakalama halatı vb ) 
+bulunmayacaktır.   
+i) Fren sistemi, emniyetli arıza (fail-safe) özelliğine sahip olmalıdır. Sistemde güç kaybı 
+veya gaz kaçağı tespit edildiğinde, frenler otomatik olarak devreye girmeli ve aracı 
+belirlenen güvenli mesafe içerisinde durdurmalıdır. 
+j) Teknik kontrol sırasında kapsülün freni devredeyken, kapsül arkasında bulunan kolay 
+ulaşılabilir bir basılı kalan butonla fren sisteminin manuel olarak devre dışı bırakılması 
+sağlanmalıdır.  
+k) Fren sistemi reaksiyon süresinin (build-up time) tespit edilmesi ve bu sürenin fren 
+hesaplamalarında dikkate alınması gerekmektedir. Bu değer Teknik Tasarım 
+Raporunda belirtilmeli ve 0.5 saniyeyi aşmamalıdır. 
+l) Araç üzerinde, uzak mesafelerden görülebilen konumda, güç, kontrol veya 
+haberleşme kesintisi durumlarında fren sisteminin konumunu (açık/kapalı) bildiren 
+görsel ikaz sistemi bulunması zorunludur. 
+ 
+13 
+m) Mekanik fren sistemlerinde ray üzerine uygulanan kuvvet, T bölgesi boyunca simetrik 
+dağılım göstermelidir. Ray üzerinde tek yönlü mekanik fren uygulamaları teknik 
+şartnamelere uygun değildir. 
+ 
+Şekil 8. Ray üzerine uygulanan mekanik fren kuvveti 
+n) Metal-metal sürtünmesi prensibine dayalı fren sistemlerinde, raya temas eden 
+frenleme bileşenlerinin yüzey sertliği, ray sertlik değerinden düşük olmalıdır. Kapsülde 
+kullanılacak frenleme bileşeninin sertliği TTR’de belirtilmelidir. 
+o) Sistemde oluşan frenleme kaynaklı ısı artışı, ray sıcaklığında 30°C'yi aşmayacak 
+şekilde kontrol altında tutulmalıdır. 
+p) Takımlar, kapsülün durdurulmasına ilişkin frenleme senaryosunu analiz etmeli ve 
+analiz sonuçlarını teknik tasarım raporunda detaylı olarak sunmalıdır. Frenleme 
+süresince kapsülün maruz kaldığı ivme (g kuvveti), zamanın fonksiyonu olarak 
+hesaplanmalı; maksimum ivme değeri açıkça belirtilmeli ve ivme-zaman grafiği 
+raporda yer almalıdır. 
+q) Frenleme sırasında kapsülün yavaşlama ivmesi, hız sensörü aracılığıyla gerçek 
+zamanlı olarak ölçülmeli, kaydedilmeli ve anlık olarak görüntülenebilir olmalıdır.  
+r) Rayın mekanik ve geometrik özelliklerine bağlı olarak maksimum fren kuvveti altında 
+kapsüle etkiyen moment hesaplanmalı ve bu hesaplamalar göz önünde 
+bulundurularak kapsül/fren sistemi tasarlanmalıdır. Bu hesaplamalar ve sonuçlar 
+Teknik Tasarım Raporunda açıklanmalıdır. 
+s) Fren sistemlerinde basınçlı tüp kullanacak olan takımların güvenlik önlemi olarak 
+basınçlı tüplerini metal kafes içerisine almaları gerekmektedir. 
+t) Hidrolik devre içeren mekanik fren sistemlerinde, hidrolik sıvı sızdırmazlığının ilgili 
+standartlara uygun şekilde sağlanması zorunludur. 
+u) Hidrolik fren sistemlerinde, hidrolik sıvı kaçağı durumunda fren ana merkezinin 
+normal çalışma limitlerini aşmasını engellemek amacıyla, fren ana merkezi arkasına 
+konumlandırılacak bir anahtar vasıtasıyla kapsüldeki tüm kritik bileşenlerin elektrik 
+beslemesi kesilmelidir. Bu güvenlik önlemi, kapsül durdurulamasa dahi yangın riskini 
+ 
+14 
+minimize 
+edecektir. 
+Sistemin 
+fonksiyonel 
+kontrolü 
+yarış 
+öncesinde 
+gerçekleştirilecektir. 
+v) Acil durumlarda (yangın, kontrol kaybı vb.) aracın otomatik olarak güvenli bir şekilde 
+durdurulmasını sağlayan acil durum fren sistemi bulunmalıdır. 
+w) Acil fren sistemi aktivasyonunda, ana enerji kaynağından bağımsız ve farklı bir 
+konumda yer alan ikincil bir enerji kaynağı bulundurulması zorunludur. Ters etkili fren 
+tasarımına sahip ve batarya enerjisi kaybedildiğinde dahi etkin frenleme yapabildiği 
+gösterilen sistemlerde, ikincil enerji kaynağı bulundurma şartı aranmayabilir. Bu 
+durumun uygunluğu DDK tarafından değerlendirilir. 
+x) Hem kapsül üzerinde hem de uzak kontrol bilgisayarında acil durdurma butonu 
+bulunmalıdır. 
+y) Acil durum butonu, tünel dışından kontrol edilebilecek şekilde olmalı ve ihtiyaç 
+durumunda kapsülü tamamen durdurmalıdır. Acil devre kesici anahtarlar, uygun 
+özelliklere sahip bir kontaktörü kontrol ederek araçtaki tüm elektrik beslemesini 
+kesmelidir.  
+z) Teknik kontrollerde, aracın diğer kontrolleri tamamlandıktan sonra acil durdurma 
+sistemi işlevsellik testi gerçekleştirilir. Test, araç hareket hâlindeyken araç üzerinde 
+fiziksel müdahale gerektirmeyen, kablolu veya uzaktan erişilebilir bir acil durdurma 
+arayüzü üzerinden yapılır; acil durdurma butonuna basılması veya acil durdurma 
+hattının/iletişimin kesilmesi durumunda aracın güvenli şekilde durması zorunludur. 
+Bu kapsamda devre kesici bağlantıları, akım değerleri, kablo kalınlıkları ve iletişim 
+kesilmesi senaryoları kontrol edilir; güvenlik riski oluşturduğu tespit edilen araçlar 
+yarışmaya katılamaz. 
+aa) Fren sisteminin performans değerlendirmesi ve testleri, Teknik Tasarım Raporunda 
+belirtilen spesifikasyonlar doğrultusunda gerçekleştirilecektir. 
+ 
+15 
+5. HABERLEŞME SİSTEMİ 
+a) Yarışma esnasında, kapsül ile uzak kontrol bilgisayarı arasındaki iletişim, kablosuz ağ 
+bağlantısı üzerinden çift yönlü olarak gerçekleştirilecektir. Bu iletişim, kontrol 
+komutlarının ve sensör verilerinin aktarımını sağlayacaktır. İletişimin sağlanması 
+amacıyla TÜBİTAK, güvenlik kontrolleri ve yarış esnasında tüm takımlara Ağ Erişim 
+Modülü (AEM) temin edecektir. 
+5.1. Haberleşme Sistem Mimarisi 
+a) Her takım kapsülüne bir Ağ Erişim Modülü (AEM) entegre edilecektir. AEM üzerinde 2.4 
+GHz kablosuz yönlendirici (router), titreşim sensörü, 5 portlu ağ anahtarı (network 
+switch), DA-DA güç kaynağı ve güç bağlantı konnektörleri bulunmaktadır. AEM'nin 
+yapısal detayları aşağıdaki şekilde gösterilmektedir. 
+ 
+Şekil 9. AEM mimarisi blok diyagramı 
+5.2. Haberleşme Kuralları 
+a) Kapsül ile iletişim, tünel giriş alanı ve kapsül arasında kurulacak ethernet ağı 
+üzerinden gerçekleştirilecektir. Tünel içi altyapı sayesinde takımlar, tünel giriş alanı ile 
+kapsül arasında lokal ağ üzerinden doğrudan iletişim kurabilecektir. 
+b) Kapsül için tahsis edilen bant genişliği değişkenlik gösterebilmektedir. Ancak, 
+öngörülen bant genişliği gereksinimlerinin 20 Mbps sınırını aşmaması gerekmektedir. 
+c) Kapsül ile tünel giriş alanı arasındaki ağ gecikmesinin <10ms kalması beklenmektedir. 
+d) Kapsülün tünel giriş alanında ve tünel içerisinde kesintisiz ağ bağlantısına sahip 
+olması zorunludur. Ağ bağlantısının herhangi bir sebeple kesilmesi halinde, kapsül 
+otomatik olarak güvenli duruma geçerek durmalıdır. 
+e) Ağ bağlantısı, yalnızca tünele giriş sırası gelmiş takım tarafından gerçekleştirilecektir. 
+Bu uygulama, takımlar arası olası iletişim çakışmalarının önüne geçmek için 
+uygulanmaktadır. 
+ 
+16 
+f) Yarışma günü genel internet erişimi sağlanmayacaktır. Takımların internet bağlantısı 
+ihtiyacı olması durumunda, kendi GSM tabanlı router veya hotspot cihazlarını temin 
+etmeleri gerekmektedir. 
+g) Hyperloop tünel ağına girişler kayıt altında tutulmaktadır. Ağa izinsiz giriş veya sızma 
+girişimleri tespit edildiği takdirde ilgili takım  yarışma yönetimine sevk edilecektir. 
+Yarışma yönetimi yapılan incelemeler sonucunda takımı diskalifiye etme hakkına 
+sahiptir. 
+5.2.1. IP Adresleme 
+a) Takımlara 192.168.1.0/24 – 192.168.1.20/24 subnet aralığında statik IP adresleri 
+tahsis edilecektir. Her takım, bu subnet içerisinde IP adreslerini kendi ihtiyaçları 
+doğrultusunda yapılandırabilecektir. Ağ altyapısında DHCP ve DNS hizmetleri 
+bulunmayacaktır. Sistem güvenliği gereği, ağa dış bağlantı, köprüleme ve uzaktan 
+erişim işlemleri kesinlikle yasaktır. 
+5.2.2. Tünel Giriş Alanı Ağ Erişimi 
+a) Tünel giriş alanında takımlara 24 portlu ethernet switch temin edilecektir. Bu switch, 
+kapsül ağ erişimi için tahsis edilmiştir. Port tahsisatı takımların inisiyatifine 
+bırakılmıştır. 
+5.2.3. Kapsül-Ağ Erişimi Modülü Montajı ve Konumlandırması 
+a) AEM (300 x 250 x 120 mm) ve gerekli ağ köprü ekipmanı, tünel giriş alanındaki 
+takımlara belirlenmiş sıra dahilinde temin edilecektir. AEM'nin montajı, kapsülün arka 
+üst yüzey paneline, tünel zeminine paralel olacak şekilde gerçekleştirilecektir. 
+AEM'nin 
+monte 
+edileceği 
+panel 
+üzerinde 
+ve 
+arkasında 
+metalik 
+engeller 
+bulunmamalıdır. 
+b) AEM montajı için, çizimde belirtilen konumlarda M6x1-20mm montaj deliği 
+bulunmalıdır. AEM ile yerleşim paneli arasında 2 cm mesafe bırakılması zorunludur. 
+AEM'nin toplam ağırlığı 1.3 kg'dır. AEM'nin aerodinamik veya diğer amaçlarla kapsül 
+içerisine yerleştirilmesi durumunda, 900 MHz ve 2.4 GHz frekanslarında düşük RF 
+yayılım kaybı sağlayan fiberglas benzeri malzemeler tercih edilmelidir. Karbon fiber 
+gibi RF sinyallerini önemli ölçüde zayıflatan ve iletişim kayıplarına neden olan 
+malzemeler, AEM'nin kapsül içi montajında kullanılmamalıdır. 
+c) Panel güç girişi DB9 erkek tip panel montaj konektörü ile sağlanacaktır. AEM'nin güç 
+tüketimi yaklaşık 40 W olup, kapsül tarafından 12-36 VDA gerilim beslemesi 
+sağlanmalıdır (Pin 5: Ground, Pin 9: Power). Panel üzerinde 5 adet RJ45 ethernet soketi 
+bulunacaktır. Takımların bu soketlere kapsül ağ bağlantısını ve IPCAM (minimum 2 MP, 
+HD 1080 x 1920P, maksimum 30 Fps, POE özellikli) montajını yapması gerekmektedir. 
+d) Tüm Ethernet bağlantılarında CAT6E ve üzeri shieldli kablo kullanılmalıdır. 
+ 
+17 
+e) AEM, 1.5 mm2 kablo kesitli, M6 pabuçlu sarı-yeşil bir kablo ile şasi topraklaması 
+yapılmalıdır. 
+5.2.4. Alternatif Ağ Erişimi Modülü Montajı ve Konumlandırma 
+a) AEM, standart montaj konumunda haberleşme için gerekli antenleri içermektedir. 
+Ancak bu konfigürasyon tüm kapsül türleri için optimum performans sağlamayabilir. 
+Bu nedenle, takımlar AEM ile uyumlu harici anten sistemleri tedarik edebilir ve bu 
+durumda AEM'yi kapsül üzerinde teknik gereksinimlere uygun alternatif bir konuma 
+monte edebilir. 
+b) Takımların kendi antenlerini kullanabilmeleri için onaylanmış anten modeli aşağıdaki 
+bağlantıda belirtilmektedir: 
+c) http://www.l-com.com/wireless-antenna-900mhz-to-25ghz-multi-band-2dbi-1-4-
+wave-blade-antenna 
+d) Kapsüle iki adet anten monte edilmelidir. Antenlerin ön yüzleri üst tarafa bakacak 
+şekilde konumlandırılmalı ve sinyal kalitesini optimize etmek için aralarında 90 derece 
+veya 180 derecelik açı bulunmalıdır. Antenlerin tünel tavanına olan görüş açısının 
+iletken malzemeler tarafından engellenmemelidir. 
+5.2.5. Kapsül ve Uzak Kontrol Bilgisayarı Arasındaki Telemetri İçeriği 
+a) Kapsül ile uzak kontrol bilgisayarı arasındaki çift yönlü veri iletişiminde bulunması 
+gereken zorunlu veriler aşağıda listelenmiştir. Test parkurunda yapılacak yarışma 
+öncesi kontrollerde, DDK üyesi bu verilerin uzak kontrol bilgisayarının grafiksel 
+kullanıcı arayüzünde (GUI) doğru şekilde görüntülendiğini teyit edecektir. 
+b) Parametre kontrollerinde belirlenen gerekliliklerin karşılanmaması durumunda rapor 
+değerlendirme 
+puanında 
+kesinti 
+uygulanacaktır. 
+Takımlar, 
+zorunlu 
+GUI 
+parametrelerine ek olarak tercih ettikleri diğer parametreleri arayüze entegre 
+edebilirler. 
+c) GUI üzerinde gösterilecek parametreler aşağıda maddeler halinde belirtilmiş olup, bu 
+parametrelerin minimum 1 Hz frekansında güncellenmesi gerekmektedir. Bu veriler 
+aynı zamanda kayıt altına alınmalıdır. 
+1. Tünel içerisindeki pozisyon (X, Y ve Z) 
+2. Tünel içerisindeki hız (X, Y ve Z) 
+3. Tünel içerisindeki ivmelenme (X, Y ve Z) 
+4. Kapsül yönelimi (roll, pitch ve yaw) 
+5. Kapsül basıncı (Yalnızca basınçlı tank kullanılıyorsa geçerlidir) 
+6. Kapsül üzerinde batarya paket/grupları haricinde en az iki noktadan alınan sıcaklık 
+7. Güç tüketimi 
+ 
+18 
+8. Batarya paket/gruplarının sıcaklık ve voltaj bilgileri 
+d) Kapsül Durdurma Komutu: Kapsülün güvenli durdurulması için uzaktan komut iletimi 
+gereklidir. Durdurma işlemi, yazılım ve donanım entegrasyonu ile veya komut üzerine 
+fiziksel sistemlerin aktivasyonu yoluyla gerçekleştirilir.
+ 
+19 
+6. KAPSÜL İTKİ SİSTEMİ 
+a) Yarışma tünelinde entegre bir çekiş veya itki sistemi bulunmamaktadır. Bu sebeple her 
+takım, kapsülünün hareketini sağlamak için kendi lineer motorlu itki sistemini temin 
+ve monte etmekle yükümlüdür. 
+b) Kapsüllerin hareket ettirilmesi için, lineer indüksiyon motorlar gibi gelişmiş elektrik 
+motorları 
+kullanılmalıdır. 
+İtki 
+kuvveti 
+yalnızca 
+elektromanyetik 
+kuvvet 
+ile 
+oluşturulacaktır. 
+c) Takımlar tarafından seçilen elektrik motorları ve itki sistemi bileşenleri, bu 
+dokümanda belirtilen yarış tüneli teknik özelliklerine uygun olmalıdır.  
+d) Yarışma esnasında kapsüllerin geri dönüş hızları 5 km/h’i geçmemelidir. 
+e) Kullanılacak itki sistemi, raylara ve tünel içerisindeki bileşenlere fiziksel zarar 
+oluşturmamalıdır. Lineer motorların hava aralıkları raylara zarar vermeyecek 
+(aşındırma, çizme vb.) uzaklıklarda tasarlanmalıdır.  
+f) Motorun raya fiziksel teması (sürtünmesi) kesinlikle yasaktır ve diskalifiye olma 
+sebebidir. 
+g) İtki sistemi, ray ve tünel bileşenlerine zarar vermeyecek şekilde tasarlanmalıdır. Ray 
+yüzeyinde aşınma veya deformasyon oluşturmayacak yapısal özellikler sağlanmalıdır. 
+h) İtki sistemi ray yüzeylerinde ΔT > 30°C'yi aşan sıcaklık artışına neden olmamalıdır. 
+i) Hava Aralığı (Air-Gap) Kararlılığı: İtki sistemi, hızlanma ve frenleme esnasında motor 
+ile ray arasındaki hava aralığını sabit tutacak mekanik rijitliğe sahip olmalıdır. 
+j) Normal Kuvvet Dengesi: Lineer motorun oluşturduğu yanal çekme veya itme 
+kuvvetleri, süspansiyon sistemi tarafından tolere edilmelidir. 
+k) Kapsül, tünel ekseninden sapmaları düzeltecek pasif veya aktif merkezleme 
+mekanizmasına sahip olmalıdır. 
+l) Çift taraflı (double-sided) motorlarda manyetik merkezleme sağlanmalı, asimetrik 
+kuvvetlerden doğan yalpalama (yaw) momentleri sönümlenmelidir. 
+m) Ray pürüzlülüğünden kaynaklanan titreşimler, süspansiyon veya manyetik yaylanma 
+ile sönümlenmelidir. 
+n) Kapsülün ağırlığını taşımak için kullanılacak tekerlekler, alüminyum raylarda aşınma, 
+çizilme gibi durumlar oluşturmayacak malzemelerden (poliüretan, özel kauçuk vb.) 
+seçilmelidir. 
+o) Yüksek hızlarda raydan çıkmayı engelleyecek ve titreşimi sönümleyecek mekanik 
+kılavuzlama (yanal destek) sistemleri bulunmalıdır. 
+p) Takımlar, tünel içerisindeki askılama teknolojisi için manyetik levitasyon sistemler 
+veya tekerlekli sistemler kullanılabilir. Seçilen yöntem ne olursa olsun, araçların tünel 
+ 
+20 
+ray bileşenlerine zarar vermesi (aşınma, çizilme, deformasyon) yasaktır. Tünel 
+içerisinde döner diskli levitasyon yapıların kullanılması yasaktır.   
+q) İtki sisteminin performansı değerlendirilmesinde itki kuvveti, maksimum hız, ivme, 
+enerji tüketimi vb. parametreler göz önünde bulundurulacaktır. Değerlendirme 
+kriterlerinin detayları daha sonra paylaşılacaktır. 
+ 
+ 
+ 
+ 
+ 
+21 
+7. NAVİGASYON SİSTEMİ 
+a) Yarışma tünelinin toplam uzunluğu 208 metredir. Tünelin başlangıcındaki 5 metrelik 
+bölüm kapsül yerleştirme alanı olarak tahsis edilmiştir. Son 17 metrelik bölüm ise 
+güvenlik alanı olarak ayrılmış olup, bu bölümde hız ve konum ölçümleri 
+gerçekleştirilmeyecektir. Ana yarış alanını oluşturan 186 metrelik orta bölüm, 
+takımların hızlanma ve frenleme manevralarını gerçekleştireceği alandır. Bu 
+yapılandırma aşağıdaki şekilde gösterilmektedir.  
+ 
+Şekil 10. Tünel içi yarış parkuru bölümleri 
+b) Tünel içi yarış parkurunun, tünel girişinden 5 metre sonra başlayan bir reflektör sistemi 
+mevcuttur. İlk 6 metrelik mesafeden sonra, her 4 metrede bir tünelin iç yüzeyine 5 cm 
+kalınlığında reflektör şeritler monte edilmiştir. Reflektör şeritler, tünelin üst yarısına 
+(saat 9-3 yönü arasındaki 180 derecelik bölüme) yerleştirilmiştir. Reflektör yerleşim 
+detayları aşağıdaki şekilde gösterilmektedir. Kullanılan reflektörler kırmızı renkli, 
+mikro-prizmatik yansıtma özelliğine sahiptir. 
+c) Kullanılan reflektörler " EGR Series Model EC 104 Reflective Marking tape for vehicle 
+surface” gereksinimini karşılamaktadır. 
+d) Tünel içi yarış parkurunun reflektör şeritlerin düzeni şu şekildedir: İlk 86 metreyi takip 
+eden 100 metrelik mesafede, 180 derecelik tünel yüzeyi iki eşit parçaya bölünmüştür. 
+Tünelin sağ tarafındaki 90 derecelik bölümde kırmızı reflektör şerit  muhafaza 
+edilecek, sol taraftaki 90 derecelik bölüm ise sarı reflektör şerit ile kaplanmıştır.  
+e) Kırmızı reflektör şeridi için belirlenen mikro-prizmatik özellik, sarı reflektör için de 
+geçerlidir. Bu sayede tünel içerisinde kullanılan sarı ve kırmızı reflektörlerin her ikisi de 
+mikro-prizmatik yapıdadır. 
+f) Tünelin içinde yarışma parkurunun yarışmada ilk 86 metresinden sonraki 100 metresi 
+incelendiğinde ilk 4 metrelik bölüm, 5 santimetrelik aralıklarla 20 parçaya bölünmüş 
+olduğu gözlemlenebilir. Bu 4 metrelik kısmın son 2,05 metresi şeritsiz bırakılmıştır. 
+Yerleştirilen reflektör şeritler, tünelin son 100 metresine girildiğini göstermektedir. Bu 
+bölüm “Son 100 metre İşaretçisi” olarak tanımlanmaktadır. 
+g) Tünelin son 48 metrelik bölümünün başlangıcındaki 4 metrelik alan, 5 santimetrelik 
+aralıklarla yerleştirilmiş 10 adet reflektör şerit ile işaretlenmiştir. Bu işaretlemeden 
+sonraki 3,05 metrelik alan şeritsiz bırakılmıştır. Bu reflektör şerit düzenlemesi, tünelin 
+son 48 metrelik bölümüne girildiğini göstermektedir. Bu bölüm “Son 48 metre 
+İşaretçisi” olarak tanımlanmaktadır. 
+h) Tünel içi üst kısım aydınlatması, standart oda parlaklığında beyaz renktedir. Tünelin iç 
+yüzeyi siyah renktedir. Reflektörlerin yerleşim detayları aşağıdaki şekilde 
+gösterilmiştir. 
+ 
+22 
+                  
+ 
+Şekil 11. Reflektör yerleşim yapısı        Şekil 12. Detaylı reflektör yerleşim yapısı 
+7.1. Kapsül Navigasyon Kuralları 
+a) Takımlar, yukarıda şekilleri ve boyutsal özellikleri belirtilen renkli reflektörleri 
+kullanarak tünel içerisindeki kapsüllerinin konum ve hız verilerini gerçek zamanlı 
+olarak tespit edeceklerdir.  
+b) Reflektör sayma işlemi için kullanılacak sensör seçimi, takımların inisiyatifine 
+bırakılmıştır. 
+ 
+23 
+c) Takımların beyan ettiği maksimum hız değeri, DDK tarafından yapılan ölçümlerle ±%5 
+tolerans aralığında uyumlu olmalıdır. 
+d) Teknik 
+Tasarım 
+Raporlarında 
+kapsül 
+navigasyon 
+sisteminde 
+kullanılacak 
+sensör/sensörlerin teknik özellikleri, reflektör şerit okuma hatasında izlenecek 
+alternatif yöntemler ve kapsülün hız/konum verilerinin elde edilme metodolojisi 
+detaylı bir şekilde açıklanmalıdır. 
+e) Enkoder, ivmeölçer ve benzeri sensörler ile yapılan hız ve konum hesaplamaları 
+yalnızca destekleyici ve doğrulayıcı amaçla kullanılmalı; bu tür yöntemler ana hız 
+hesaplama metodu olarak sunulmamalıdır. Gelişme ve Teknik Tasarım Raporlarında 
+bu yaklaşım açık bir şekilde belirtilmelidir. 
+f) Yarışma tünelinde menhol çıkışlarına denk gelen (110.5 m ve 162.5 metrelerde) 2 
+noktada reflektör okumalarının sağlıklı gerçekleştirilebilmesi için tünelin gidiş yönüne 
+göre sağında yer alan reflektörlerin okunması ve takımların algoritmalarını bu yönde 
+güncellemeleri tavsiye edilmektedir. 
+g) Konum ve hız ölçüm yöntemlerinin imkân dahilinde simüle edilmesi ve test verilerinin 
+paylaşılması gerekmektedir. 
+h) Ana ve yedek sensörlerin, oluşturulan navigasyon algoritmalarında hangi 
+durumlarında öncelikli konumda olacakları ayrıntılı biçimde açıklanmalıdır. 
+i) Sensörlerin kapsül üzerindeki yerleşimleri ayrıntılı şekilde açıklanmalıdır. 
+j) Hata senaryolarında navigasyon algoritmalarının çalışma yapısı açıklanmalıdır. 
+ 
+ 
+24 
+8. GÜVENLİK İSTERLERİ 
+a) Kapsül, acil durumlarda sistemin güvenli duruma geçmesini sağlayacak güvenlik 
+bileşenleri ile donatılmalıdır. Yarışma süresince, bu madde kapsamında belirtilmiş 
+veya belirtilmemiş güvenlik risklerinin tespit edilmesi durumunda, uygun olmayan 
+sistemlerin yarışmaya katılımına DDK kararıyla izin verilmeyebilir. 
+b) Kapsül sistemi, aşağıda belirtilen koşullar oluştuğunda itki sistem fonksiyonlarını 
+güvenli şekilde sonlandırma ve acil durdurma frenlerini devreye alma kabiliyetine 
+sahip olmalıdır: 
+• Kapsülle olan haberleşme kesildiğinde 
+• Sistem güç birimlerinin önceden belirlenmiş maksimum sıcaklık ve güç 
+değerlerine ulaşması durumunda 
+• Kapsülün tünel içinde Yarışma Bitiş noktasını geçmesi (Acil Durum Bölgesine 
+girmesi) durumunda 
+• Grafiksel 
+Kullanıcı 
+Arayüzü 
+(GUI) 
+ekranında 
+acil 
+durum 
+protokolünün 
+etkinleştirilmesi durumunda 
+c) Teknik tasarım raporunda, kapsül enerji hatlarının sistem güç gereksinimlerini 
+karşılama kapasitesi ve güç sistemlerinin güvenlik önlemleri detaylı şekilde 
+belgelendirilmelidir. Bu önlemlerin uygulanması hem teknik kontrol aşaması hem de 
+yarışma sürecinde kontrol edilecektir. 
+d) Batarya grubu, yangına minimum 5 dakika dayanıklı bir bariyer ile izole edilmelidir. 
+Kullanılan malzeme TTR’de detaylı bir şekilde açıklamalıdır. 
+e) Batarya paketi, güvenli bir şekilde sabitlenmelidir. 
+f) Batarya Yönetim Sistemi (BYS), paketin sıcaklık değerlerini sürekli olarak izlemelidir. 
+g) Her 10 batarya hücresine minimum bir (1) adet sıcaklık sensörü entegre edilmelidir. 
+h) BYS, şarj edilebilen batarya hücrelerinin ve paketinin güvenli işletim sınırları (gerilim, 
+akım, sıcaklık, hücre dengeleme, vb.) içerisinde çalışmasını sağlayan bir elektronik 
+sistemdir ve kullanımı zorunludur. 
+i) Sıcaklık göstergesi bir uyarı flaşörüne ve buzzera elektriksel olarak bağlanmalıdır. 
+Batarya sıcaklığı kritik sıcaklık değerine ulaştığında flaşör ve buzzer uyarı vermelidir. 
+Sesli uyarı, 2 m mesafeden duyulacak şekilde 80 dB şiddetinde olmalıdır. 
+j) Batarya grubunun sistemle elektriksel bağlantısı otomatik bir koruma sistemi 
+tarafından kesilmelidir. Flaşörün ve sesli uyarı sisteminin aktive edilme sıcaklığı ile 
+sistemin kapanma sıcaklığı arasında test yapmaya izin verecek bir aralık 
+sağlanmalıdır. İdeal koşullarda, sistem 55˚C’de kendini kapatması gerekmektedir. 
+k) Flaşör, DDK üyelerinin ve yarışmacıların görebileceği bir yerde konumlandırılmalıdır. 
+Flaşörün çapı en az 2 cm, yüksekliği ise en az 1 cm olmalıdır. Flaşör, kırmızı renkli 
+olmalıdır. 
+ 
+25 
+l) Araçtaki itki sistemini besleyen bataryanın modüler olması gerekmektedir. 
+m) Basınçlı tüp içeren kapsüllerde, aşırı basınç durumunda tahliyeyi sağlayan relief valf 
+sistemi bulunması zorunludur. Relief valf veya eşdeğer basınç tahliye sistemine sahip 
+olmayan kapsüllerin tünel içerisine girişi kesinlikle yasaktır. 
+n) Fren sistemlerinde basınçlı tüp kullanacak olan takımların güvenlik önlemi olarak 
+basınçlı tüplerini metal kafes içerisine almaları gerekmektedir. 
+o) Kapsüle ait hiçbir parça yarış sonunda tünel içerisinde kalmamalıdır. 
+ 
+26 
+9. TEST VİDEOSU 
+9.1. 
+İtki Test Videosu 
+9.1.1.Giriş 
+a) Takımların tasarladıkları sistemi açıklayan videoyu ve en fazla beş sayfalık bir belgeyi 
+yüklemesi gerekmektedir.  
+b) Video bağlantısı ve belge Yarışma takviminde belirtilen tarihe kadar KYS sisteminde 
+bulunan alana yüklenmelidir. 
+c) İlgili videoda ve/veya belgede Testlerin gerçekleştirilmiş olduğunu kanıtlamak için 
+sonuçlar, ölçümler ve verilere yer verilmesi gerekmektedir. Gerçekleştirilen testlerin 
+2026 yılı Hyperloop Geliştirme Yarışması kapsamında hazırlandığını belirten bir beyan 
+videoda yer almalıdır. 
+d) Sistemlerin performansı bu videolar üzerinden değerlendirilmeyecektir. Bu videolar, 
+takımın test aşamasında yeterince ilerlediğini ve teknolojilerinin 208 metrelik yarışma 
+tünelinde yarışabilecek durumda olduğunu, aynı zamanda belirli sistemlerin doğru 
+şekilde test edildiğini kanıtlamak amacıyla hazırlanmalıdır. Ekipler yarışma haftasına 
+kadar sistemlerini geliştirmeye devam edebilir. 
+e) DDK tarafından daha önce teslim edilen belgelerin incelenmesi sırasında herhangi bir 
+güvenlik riski tespit edilirse, başvuru sahibinden ek videolar yüklemesi talep edilebilir. 
+f) Sistem test videolarında, sistemin kapsül üzerine bağlantılı olması bu aşamada 
+zorunlu olmayıp sistem bazlı gösterimler de yapılan açıklamalara bağlı olarak kabul 
+edilmektedir. 
+9.1.2.Yöntem 
+a) Bu aşamada, Yarışmada yarışacak sistemin işlevselliğini gösteren bir video ve videoda 
+gösterilenleri açıklayan en fazla beş sayfalık bir belge içermelidir.  
+b) Her bir sistem için tamamlanan testlere ait belge, her test için şu unsurları içermelidir: 
+• Testin amacı/hedefleri: Testin neyi amaçladığını ve neyi kanıtlamayı 
+hedeflediğini açıklayınız. 
+• Test açıklaması: Testin nasıl gerçekleştirildiğini detaylı bir şekilde açıklayınız. 
+• Kullanılan test altyapısı ve düzeni hakkında bilgi: Kullanılan bileşenler, 
+malzemeler, boyutlar, enstrümantasyon gibi detayları belirtiniz. 
+• Risk değerlendirmesi: Test sırasında ortaya çıkabilecek olası risklerin analizini 
+ve önlemlerini açıklayınız. 
+• Detaylı test protokolleri: Protokolün her bir adımı için giriş ve çıkış kriterlerini 
+içerecek şekilde ayrıntılı talimatları belirtiniz. 
+ 
+27 
+• Test set noktaları/koşulları: Yük durumları, basınç, voltaj, güç tüketimi gibi test 
+sırasında uygulanan koşulları belirtiniz. 
+• Beklenen sonuçlar: Testin başlangıcında öngörülen sonuçları açıklayınız. 
+• Sonuç: Testin genel değerlendirmesi, beklenen sonuçlarla karşılaştırması, 
+grafik gösterimleri ve çıkarımları belirtiniz. 
+c) Gerçekleştirilen testlerin videosu aşağıdaki formatta teslim edilmelidir: 
+• Sabit kamera pozisyonu: Kamera, test sırasında sabit bir noktada olmalıdır. 
+• Testin net bir şekilde görülmesi: Videoda testin tüm detayları açıkça 
+görülebilmelidir. 
+• En az 1080p çözünürlük: Video, yüksek kaliteyi sağlamak için minimum 1080p 
+çözünürlükte olmalıdır. 
+• Çevrimiçi bir video platformuna yüklenmiş olmalı: Video, bir çevrimiçi yayın 
+platformuna yüklenmeli ve bağlantısı KYS sisteminde bulunan alana 
+yüklenmelidir. 
+• Video uzunluğu en fazla 5 dakika olabilir. 
+ 
+28 
+10. SORUMLULUK BEYANI VE İLETİŞİM 
+a) T3 Vakfı, TEKNOFEST ve TÜBİTAK, yarışmacıların teslim etmiş olduğu herhangi bir 
+üründen veya yarışmacıdan kaynaklanan herhangi bir yaralanma veya hasardan hiçbir 
+şekilde sorumlu değildir.  
+b) Yarışmacıların 3. kişilere verdiği zararlardan T3 Vakfı, TÜBİTAK ve organizasyon 
+yetkilileri sorumlu değildir. T3 Vakfı, TEKNOFEST ve TÜBİTAK, takımların kendi 
+sistemlerini 
+Türkiye 
+Cumhuriyeti 
+yasaları 
+çerçevesinde 
+hazırlamalarını 
+ve 
+uygulamalarını sağlamaktan sorumlu değildir. 
+c) Türkiye Teknoloji Takımı Vakfı ve TÜBİTAK işbu şartnamede her türlü değişiklik yapma 
+hakkını saklı tutar. 
+d) Başvuru ve rapor yükleme için: https://www.t3kys.com 
+e) Faturalandırma ve Destek İadesi için: rute.hyperloop@tubitak.gov.tr 
+f) Bilgi ve duyurular için: www.teknofest.org 
+g) Sorularınız için: https://groups.google.com/u/0/g/hyperloop-geltrme-yarimasi?hl=tr  
+ 
+29 
+HYPERLOOP GELİŞTİRME YARIŞMASI 
+ 
+BÖLÜM 2 
+PERFORMANS KATEGORİSİ TEKNİK KURALLAR  
+ 
+ 
+EK1. TEKNİK KONTROL 
+ÇİZELGELERİ 
+ 
+Takım Adı : 
+ 
+Takım Kaptanı Adı-Soyadı : 
+ 
+Yarış Öncesi Kontroller Sırası : 
+ 
+Yarış Öncesi Kontroller Tarihi : 
+ 
+Teknik Tasarım Raporu (TTR) Puanı : 
+ 
+ 
+ 
+2026 
+ 
+ 
+ 
+30 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Yarışma kuralları ve değerlendirme kriterleri, organizasyonun ihtiyaçları 
+doğrultusunda DDK tarafından güncellenme hakkı saklı kalmak kaydıyla 
+uygulanır. 
+ 
+31 
+2026 HYPERLOOP GELİŞTİRME YARIŞMASI 
+TEKNİK KONTROL CETVELİ 
+ 
+ 
+YARIŞ ÖNCESİ KONTROLLER 
+YARIŞMA KAPSAMINDA TÜNELE GİREBİLİR :  
+YARIŞMA DIŞI TÜNELE GİREBİLİR :  
+ 
+ 
+ 
+ 
+TEKNİK KONTROL ÖZETİ 
+TEKNİK KONTROL İSTASYONLARI 
+TK1 
+TK2 
+TK3 
+TK4 
+TK5 
+…/…/2026 
+…/…/2026 
+…/…/2026 
+…/…/2026 
+…/…/2026 
+1. KAPSÜL YAPISAL VE MEKANİK KONTROLÜ 
+ 
+ 
+ 
+ 
+ 
+2. KAPSÜL GÜVENLİK KONTROLÜ 
+ 
+ 
+ 
+ 
+ 
+3. İTKİ SİSTEMİ KONTROLÜ 
+ 
+ 
+ 
+ 
+ 
+4. HAREKET VE FREN SİSTEMİ KONTROLÜ 
+ 
+ 
+ 
+ 
+ 
+5. NAVİGASYON SİSTEMİ KONTROLÜ 
+ 
+ 
+ 
+ 
+ 
+6. HABERLEŞME SİSTEMİ KONTROLÜ 
+ 
+ 
+ 
+ 
+ 
+ 
+32 
+YORUM VE NOTLAR 
+ 
+ 
+ 
+33 
+ 
+ 
+ 
+1. KAPSÜL YAPISAL VE MEKANİK KONTROLÜ 
+KONTROL 
+1.1. 
+Kapsülün ağırlığı uygun mu? (Kapsülün toplam ağırlığı 
+250 kg'dan fazla olmamalıdır.) 
+Ağırlık:  
+ 
+1.2. 
+Kapsülün uzunluğu uygun mu? (Kapsülün uzunluğu 300 
+mm’den küçük ve 3500 mm’den büyük olmamalıdır.) 
+Uzunluk:  
+ 
+1.3. 
+Kapsül kesiti (boru çapı, yasak alanlar ve ekipman alanı dikkate alınarak) uygun 
+mu? 
+ 
+1.4. 
+AEM' nin kapsül üzeri montaj yeri mekanik açıdan uygun mu? (Cıvata konumları 
+ve en az 2cm lik boşluk) 
+ 
+1.5. 
+Çeki plakası ölçü ve konumu uygun mu? Varsa, cıvata kafaları gömülü mü? 
+ 
+1.6. 
+Tüm bağlantı elemanlarına kalıcı işaretleme (marka kalemi ile) yapılmış mı? 
+ 
+1.7. 
+Yapısal güvenlik kriterlerini sağlıyor mu? (keskin kenar/köşe bulunmamalı, 
+bağlantılar sağlam olmalı, yeterli kaynak kalitesine sahip olmalı) 
+ 
+1.8. 
+Montaj ve imalat kalitesi uygun mu? (komponentlerin CAD modelle uyumlu 
+olarak ve güvenlik gözetilerek sistem montajı gerçekleştirilmeli) 
+ 
+1.9. 
+Sistem aşırı ısınma şartlarına elverişli mi? (kapsülde aşırı ısınma durumuna karşı 
+soğutma bulunmalı/ soğutma yoksa nasıl önlem aldığı belirtilmeli) 
+ 
+1.10. Pnömatik-hidrolik 
+sistemler 
+uygun 
+mu? 
+(sistemde 
+sızıntı 
+olmamalı, 
+komponentlerin entegrasyonu uygun olmalı) 
+ 
+Rapor Değerlendirmeleri 
+TTR Kapsül Tasarımı, Analizleri ve Üretim Aşamaları 
+Başlığı Puanı 
+ 
+Revizyon Puan: 
+ 
+Değerlendirmeyi Yapan DDK 
+Üyeleri: 
+ 
+☐ UYGUN  
+☐ UYGUN DEĞİL  
+ 
+34 
+YORUM VE NOTLAR 
+ 
+ 
+ 
+35 
+ 
+ 
+2. KAPSÜL GÜVENLİK KONTROLÜ 
+KONTROL 
+2.1. 
+Kapsül ağırlığı 120 kg’dan fazlaysa mapa var mı, sayısı yeterli mi, dengeli 
+kaldırmaya elverişli mi? 
+Kapsül ağırlığı 120 kg’dan azsa taşıma ekipmaları var mı, sayısı yeterli mi, dengeli 
+kaldırmaya elverişli mi? 
+ 
+2.2. 
+Yangın vb. durumlar için herhangi bir güvenlik önlemi olup olmadığının kontrolü 
+ 
+2.3. 
+Varsa basınçlı kapların regülatör, relief valf, metal kafes gibi elemanlarının 
+güvenlik açısından kontrolü  
+ 
+2.4. 
+Batarya sistem izolasyon malzemesinin yangın dayanıklılık kontrolü 
+ 
+2.5. 
+Hücre sıcaklıklarının izlenmesinin kontrolü (çalışır vaziyette, her 10 hücreye min. 
+1 adet var mı?) 
+ 
+2.6. 
+Kablolama ve konnektör bağlantılarının uygunluğunun kontrolü 
+ 
+2.7. 
+Maksimum sıcaklık (55o C) durumunda fren sisteminin devreye girmesinin 
+kontrolü 
+ 
+2.8. 
+Batarya sıcaklık flaşörü kontrolü. Var mı? Çalışıyor mu? (Çap: Min. 20mm , 
+Yükseklik: Min. 10mm , Renk: Kırmızı , Görünürlük: Uygun mu?) 
+ 
+2.9. 
+Batarya sıcaklık buzzer kontrolü (Ses geliyor mu?) 
+ 
+2.10. Batarya paketi mekanik olarak sabitlenmiş ve gevşeme riski yok mu? 
+ 
+2.11. Batarya muhafazası elektriksel izolasyon sağlıyor mu? 
+ 
+2.12. Açıkta yüksek gerilim ölçme terminali var mı? 
+ 
+2.13. BYS aktif ve çalışır durumda mı? 
+ 
+2.14. Aşırı gerilim / akım / sıcaklık korumaları tanımlı mı? 
+ 
+2.15. Hücre dengeleme (aktif/pasif) mevcut mu? 
+ 
+2.16. BYS, acil durumda bataryayı izole edebiliyor mu? 
+ 
+2.17. Acil fren sistemi batarya ile senkron çalışıyor mu? 
+ 
+2.18. İtki sistemi batarya beslemesi kesildiğinde fren sistemi çalışmaya devam ediyor 
+mu? 
+ 
+2.19. İkincil enerji kaynağı (varsa) itki sistemi bataryasından izole mi? 
+ 
+2.20. Acil durdurma butonu itki sistemi bataryasının enerjisini kesiyor mu? 
+ 
+2.21. Haberleşme kesildiğinde batarya güvenli moda geçiyor mu? Fren yapıyor mu? 
+ 
+2.22. Güç çıkışı akım sigortaları ile sınırlandırılıyor mu? 
+ 
+Rapor Değerlendirmeleri 
+TTR Kapsül güvenlik ekipmanları ve devreye girme 
+prosedürleri Başlığı Puanı 
+ 
+Revizyon Puan: 
+ 
+Değerlendirmeyi Yapan DDK 
+Üyeleri: 
+ 
+☐ UYGUN  
+☐ UYGUN DEĞİL  
+ 
+36 
+YORUM VE NOTLAR 
+ 
+ 
+ 
+37 
+ 
+ 
+ 
+ 
+ 
+ 
+ 3. İTKİ SİSTEMİ KONTROLÜ 
+KONTROL 
+3.1. 
+Motor sürücü ve diğer donanımlarda rapora göre değişiklik varsa, alınan koruma önlemleri 
+yeterli mi? 
+ 
+3.2. 
+Çift motorlu yapılarda tek motor arızası için yeterli önlemler alınmış mı? 
+ 
+3.3. 
+İtki kuvveti sağlıklı bir şekilde ölçülebiliyor mu? 
+ 
+3.4. 
+Rejeneratif frenleme yapılabiliyor mu? Yapıyorsa sistemi buna uygun mu? 
+ 
+3.5. 
+Araç ağırlığında değişiklik/sapma oldu mu, olduysa etkisi analiz edildi mi, gerekli önlemler 
+alındı mı? 
+ 
+3.6. 
+Hava aralığı değerlendirildi mi, aktif olarak değişken mi, arıza durumunda raya sürtme riski 
+var mı? 
+ 
+3.7. 
+Güvenlik tehlikesine yol açmayacak şekilde (parça kopması, fırlaması vb.) gerekli 
+önlemlerin kontrolü 
+ 
+3.8. 
+Sistemin Raylara zarar vermeyeceği (sürtünme vb. durumlar) kontrolü 
+ 
+3.9. 
+Kapsül en az 10 metre hareket edebildi mi? 
+ 
+Rapor Değerlendirmeleri 
+TTR Kapsül itki ve stabilite sistemi Başlığı Puanı 
+ 
+Revizyon Puan: 
+ 
+Değerlendirmeyi Yapan DDK 
+Üyeleri: 
+ 
+☐ UYGUN  
+☐ UYGUN DEĞİL  
+ 
+38 
+YORUM VE NOTLAR 
+ 
+ 
+ 
+39 
+ 
+ 
+ 
+4. HAREKET VE FREN SİSTEMİ KONTROLÜ 
+KONTROL 
+4.1. 
+Kapsülün çalışmadığı zaman fiziksel olarak iterek hareket edebilmesinin kontrol edilmesi 
+ 
+4.2. 
+Kapsül stabilitesinin kontrol edilmesi 
+ 
+4.3. 
+İletişimli fren kontrolü 
+ 
+4.4. 
+Fren baskı noktalarının kontrolü 
+ 
+4.5. 
+İletişimli acil fren kontrolü (en az 10 saniye fren yapıyor mu?) 
+ 
+4.6. 
+Acil durum butonu ile fren kontrolü (en az 10 saniye fren yapıyor mu?) 
+ 
+4.7. 
+Ön ve arka frenlerin bağımsızlığının kontrolü 
+ 
+4.8. 
+Fren tepki süresinin (0.5 s) gözlemlenmesi 
+ 
+4.9. 
+Fren sistemini devre dışı bırakan buton kapsülün arkasında ve kolay ulaşılabilir bir yerde 
+mi? 
+ 
+4.10. 
+Fren sistemini devre dışı bırakan buton çalışıyor mu? Kapsül fiziksel müdahale ile hareket 
+ettirilebiliyor mu? 
+ 
+4.11. 
+Haberleşme kesildiği zaman acil fren kontrolü (en az 10 saniye fren yapıyor mu?) 
+ 
+4.12. 
+Fren durumunu bildiren görsel ikaz sistemi kontrolü 
+ 
+4.13 
+Fren kuvveti ölçümü - Ön 
+ 
+4.14 
+Fren kuvveti ölçümü - Arka 
+ 
+4.15. 
+Fren kuvveti ölçümü - Toplam 
+ 
+4.16. 
+Azami fren kuvveti altında şasi rijitliğinin kontrolü 
+ 
+4.17. 
+Kurtarma parçasına uygulanacak çekme kuvvetine (Fazla olana göre: kapsül fren 
+hesaplamalarında hesaplanan frenleme kuvvetinin en az 2 katı veya kapsül ağırlığının 2 
+katı) karşı gövde dayanıklı mı? 
+ 
+4.18. 
+Ters ekili fren sistemi yoksa yedek batarya ile frenleme kontrolü   
+ 
+4.19. 
+Yapısal durum kontrolü (Gevşek cıvata, markalama, yetersiz kaynak, gaz hidrolik kaçağı 
+vs.. tehlikeye sebep verecek durumlar)  
+ 
+Rapor Değerlendirmeleri 
+TTR Kapsül fren sistemi ve öngörülen kapsül hız profili 
+Başlığı Puanı 
+ 
+Revizyon Puan: 
+ 
+Değerlendirmeyi Yapan DDK 
+Üyeleri: 
+ 
+☐ UYGUN  
+☐ UYGUN DEĞİL  
+ 
+40 
+YORUM VE NOTLAR 
+ 
+ 
+ 
+41 
+ 
+ 
+ 
+ 
+5. NAVİGASYON SİSTEMİ KONTROLÜ 
+KONTROL 
+5.1. 6 metrelik tünel içerisinde bulunan 6 adet reflektör şeritler okundu mu? 
+ 
+5.2. Okunan reflektör şerit bilgisinden yararlanılarak konum ve hız tespiti yapıldı mı? 
+ 
+5.3. Vakum tünelinde kullanılacak olan AEM bağlantısı gerçekleştirildi mi? 
+ 
+5.4. Reflektör konum sensörü pozisyonu  
+Sağ ☐ 
+Sol ☐ 
+-------------- 
+Rapor Değerlendirmeleri 
+TTR Kapsül navigasyon sistemi ve sensör bilgileri Başlığı Puanı 
+ 
+Revizyon Puan: 
+ 
+Değerlendirmeyi Yapan DDK Üyeleri: 
+ 
+☐ UYGUN  
+☐ UYGUN DEĞİL  
+ 
+42 
+YORUM VE NOTLAR 
+ 
+ 
+ 
+43 
+ 
+ 
+ 
+ 
+6. HABERLEŞME SİSTEMİ KONTROLÜ 
+KONTROL 
+6.1. 
+AEM' nin kapsül üzeri montaj yeri mekanik açıdan uygun mu? (Cıvata konumları ve en az 
+2cm lik boşluk) 
+ 
+6.2. 
+AEM' nin şasi topraklamasında 1.5 mm2 kablo kesitli, M6 pabuçlu sarı-yeşil kablo 
+kullanılmış mı?   
+ 
+6.3. 
+AEM' nin EM açıdan  LOS' unu(Görüş hattı) bozan metalik bir engel mevcut mudur / uygun 
+uzatma anteni kullanılmış mı?   
+ 
+6.4. 
+AEM ve IPCAM için kullanılan kablaj CAT6E ve üzeri shield 'li bir ürün mü?   
+ 
+6.5. 
+Uzak kontrol bilgisayarı, kapsül kontrol bilgisayarı ve kullanılıyorsa IPcam' in static IP 
+atamaları yapılmış mı?   
+ 
+6.6. 
+Uzak kontrol bilgisayarı IP değiştirme parametrik olarak yapılabiliyor mu?    
+ 
+6.7. 
+Uzak kontrol bilgisayarı arayüzünde zorunlu parametreler uygun olarak gösterilebiliyor ve 
+kaydediliyor mu?  Güncelleme hızı en az 1 Hz mi? 
+ 
+6.8. 
+Kapsül ivme verileri kayıt edilebiliyor mu?   
+ 
+6.9. 
+Uzak kontrol bilgisayarı arayüzüne zorunlu ACİL DURDURMA BUTONU eklenmiş mi?   
+ 
+6.10. Kapsül kontrol bilgisayarı ve Uzak kontrol bilgisayarı arası haberleşme akıcı olarak 
+sağlanabiliyor mu?  
+ 
+6.11. AEM haberleşmesi kesildiğinde fren yapıyor mu? 
+ 
+Rapor Değerlendirmeleri 
+TTR Haberleşme ve görüntü aktarımı Başlığı Puanı 
+ 
+Revizyon Puan: 
+ 
+Değerlendirmeyi Yapan DDK 
+Üyeleri: 
+ 
+☐ UYGUN  
+☐ UYGUN DEĞİL  
+ 
+44 
+ 
+ 

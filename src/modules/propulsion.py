@@ -22,7 +22,7 @@ class PropulsionEngine:
 
         # Constants
         MAX_THRUST = 5000 # N
-        MASS = 500 # kg (Pod weight)
+        MASS = 250 # kg (Pod weight, Max 250kg 2026 Specs)
         DRAG_COEFF = 0.02 # Low pressure environment drag
         
         # Force Calculation

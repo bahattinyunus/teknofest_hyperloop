@@ -7,12 +7,12 @@
 ██╔══██║  ╚██╔╝  ██╔═══╝ ██╔══╝  ██╔══██╗██║     ██║   ██║██║   ██║██╔═══╝ 
 ██║  ██║   ██║   ██║     ███████╗██║  ██║███████╗╚██████╔╝╚██████╔╝██║     
 ╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚══════╝╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝ ╚═╝     
-                                                            v5.0.0-PROTOTYPE
+                                                            v4.0.0-PROTOTYPE
 ```
 
 ![System Status](https://img.shields.io/badge/System-OPERATIONAL-brightgreen?style=for-the-badge&logo=prometheus)
 ![Architecture](https://img.shields.io/badge/Architecture-MODULAR-blueviolet?style=for-the-badge&logo=visual-studio-code)
-![Teknofest](https://img.shields.io/badge/Mission-TEKNOFEST_2026-red?style=for-the-badge&logo=target)
+![Teknofest](https://img.shields.io/badge/Mission-TEKNOFEST_2025-red?style=for-the-badge&logo=target)
 
 **"Hız, Kontrol, Gelecek."**
 
@@ -21,12 +21,9 @@
 ---
 
 ## �️ Görev Özeti (Mission Brief)
-**Hyperloop**, sadece bir ulaşım projesi değil, bir mühendislik meydan okumasıdır. Bu repo, **Teknofest 2026 Hyperloop Geliştirme Yarışması** (5. Yıl) için tasarlanan *HyperSystem* podunun dijital ikizini ve kontrol mimarisini barındırır. Amaç, ses hızına yakın hızlarda seyredecek bir podun elektromanyetik, mekanik ve yazılımsal entegrasyonunu kusursuz bir şekilde simüle etmek ve yönetmektir.
 
-Yarışma bu yıl 3 ana kategoriden oluşmaktadır:
-- **Performans Kategorisi:** 208m test tünelinde, maksimum 250kg ağırlıkla gerçekleştirilen tam sistem yarışması.
-- **Teknoloji Gösterim Kategorisi:** İtki ve Levitasyon (Askılama) alt sistemlerinin bağımsız geliştirilmesi ve gösterimi.
-- **Tanımlı Problem Çözüm Kategorisi:** Akıllı Kapsül Güvenlik Yönetim Sistemi (AKGYS) tasarımı ve simülasyonu.
+**Hyperloop**, sadece bir ulaşım projesi değil, bir mühendislik meydan okumasıdır. Bu repo, **Teknofest Hyperloop Geliştirme Yarışması** için tasarlanan *HyperSystem* podunun dijital ikizini ve kontrol mimarisini barındırır. Amaç, ses hızına yakın hızlarda seyredecek bir podun elektromanyetik, mekanik ve yazılımsal entegrasyonunu kusursuz bir şekilde simüle etmek ve yönetmektir.
+
 > [!NOTE]
 > Bu bir **Command Center** reposudur. Kodlar, sadece fonksiyonel değil, aynı zamanda sistemin hayatta kalma (survival) protokolleridir.
 
@@ -116,6 +113,6 @@ Bu komuta merkezini yerel makinenizde ayağa kaldırmak için:
 ---
 <div align="center">
     <i>"Gelecek, hızlanarak gelir."</i><br>
-    <b>TEKNOFEST 2026 HYPERLOOP TEAM</b>
+    <b>TEKNOFEST 2025 HYPERLOOP TEAM</b>
 </div>
 
