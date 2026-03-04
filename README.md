@@ -90,7 +90,17 @@ Yazılımımız, asenkron çalışan ve birbirini denetleyen bağımsız modüll
 
 ---
 
-## 🚀 Kurulum, Simülasyon ve Deploy (User Manual)
+## � Küresel Rekabet ve Stratejik Analiz (Competitor Analysis)
+
+Projemiz, dünya genelindeki Hyperloop ekosistemiyle teknik olarak kıyaslanabilir ve birçok noktada özgün çözümler sunmaktadır:
+
+- **Dünyadaki Benzerleri:** European Hyperloop Week (EHW), Global Hyperloop Competition (IIT Madras) ve SpaceX (Eski) gibi dev organizasyonlar, projemizin teknik standartlarını belirleyen ana referanslardır.
+- **Yazılım Referansları:** Delft Hyperloop'un *Serpenta* GUI mimarisi ve TUM Hyperloop'un düşük gecikmeli haberleşme protokolleri, kontrol yazılımımızın modüler yapısında (özellikle `telemetry.py` ve `main_brain.py`) benchmark olarak kullanılmıştır.
+- **Stratejik Farkımız:** Rakipler genelde genel güvenlik (fail-safe) protokollerine odaklanırken, bizim **Of/Trabzon** ruhuyla geliştirdiğimiz **AKGYS (Otonom Karar Mekanizması)**, podun anlık riskleri (RPN) hesaplayıp yer istasyonuna ihtiyaç duymadan duruş kararı almasını sağlayarak bizi 2026'da "Tanımlı Problem" çözümünde öne çıkarmaktadır.
+
+---
+
+## �🚀 Kurulum, Simülasyon ve Deploy (User Manual)
 
 ### Geliştirici Gereksinimleri
 - **Python:** 3.9 veya 3.10 (Stabilite için önerilir)
